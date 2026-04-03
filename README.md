@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:FF006E,50:8338EC,100:06FFB4&height=220&section=header&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF006E,50:8338EC,100:06FFB4&height=160&section=header&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
@@ -176,4 +176,4 @@ open to internships · SDE · AI/ML · Full-Stack roles
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:06FFB4,50:8338EC,100:FF006E&height=150&section=footer&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06FFB4,50:8338EC,100:FF006E&height=120&section=footer&animation=fadeIn" width="100%"/>

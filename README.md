@@ -34,10 +34,6 @@
 
 <br/>
 
-<a href="https://pathforge-hazel.vercel.app/auth">
-<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api/pin/?username=kratos0718&repo=pathforge&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF006E&icon_color=06FFB4&text_color=c9d1d9" />
-</a>
-
 ### ⚡ PathForge &nbsp;·&nbsp; [Live ↗](https://pathforge-hazel.vercel.app/auth)
 
 > **AI-powered career guidance platform** — builds personalized learning paths with a resilient AI engine. Native PWA, installable on Android & iOS. Production-grade with Supabase backend.
@@ -46,13 +42,8 @@
 
 🔥 **45+ deployments** &nbsp;·&nbsp; 🧠 **AI fallback system** &nbsp;·&nbsp; 📱 **Mobile PWA**
 
-<br clear="right"/>
 
 ---
-
-<a href="https://mark-me-ih3h.vercel.app/">
-<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api/pin/?username=kratos0718&repo=MarkMe&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF006E&icon_color=06FFB4&text_color=c9d1d9" />
-</a>
 
 ### 🎯 MarkMe &nbsp;·&nbsp; [Live ↗](https://mark-me-ih3h.vercel.app/)
 
@@ -62,13 +53,8 @@
 
 ✅ **Automated tracking** &nbsp;·&nbsp; 🎨 **Polished dark UI** &nbsp;·&nbsp; ⚡ **Live deployed**
 
-<br clear="right"/>
 
 ---
-
-<a href="https://portfolio-ivory-nine-89.vercel.app/">
-<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api/pin/?username=kratos0718&repo=portfolio&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF006E&icon_color=06FFB4&text_color=c9d1d9" />
-</a>
 
 ### 💼 Portfolio Pro &nbsp;·&nbsp; [Live ↗](https://portfolio-ivory-nine-89.vercel.app/)
 
@@ -78,13 +64,8 @@
 
 🌐 **Zero downtime** &nbsp;·&nbsp; 🧩 **Component-driven** &nbsp;·&nbsp; ⚙️ **Type-safe**
 
-<br clear="right"/>
 
 ---
-
-<a href="https://github.com/kratos0718/Abhinavs-DSA-progress">
-<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api/pin/?username=kratos0718&repo=Abhinavs-DSA-progress&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF006E&icon_color=06FFB4&text_color=c9d1d9" />
-</a>
 
 ### 🧠 DSA Mastery
 
@@ -94,7 +75,6 @@
 
 📈 **Consistent commits** &nbsp;·&nbsp; 🎯 **Interview-ready** &nbsp;·&nbsp; ☕ **Java OOP**
 
-<br clear="right"/>
 
 ---
 

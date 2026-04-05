@@ -34,7 +34,7 @@
 
 <br/>
 
-### ⚡ PathForge &nbsp;·&nbsp; [Live ↗](https://pathforge-hazel.vercel.app/auth)
+### ⚡ PathForge &nbsp;·&nbsp; [Live ↗](https://pathforge.online)
 
 > **AI-powered career guidance platform** — builds personalized learning paths with a resilient AI engine. Native PWA, installable on Android & iOS. Production-grade with Supabase backend.
 

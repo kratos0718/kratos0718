@@ -22,7 +22,8 @@
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  🎯  Seeking Internships · SDE Roles · AI/ML Positions  ║
+║    Open to AI/ML Research Internships · Remote 
+          Building with LLMs & Agentic AI  
 ╚══════════════════════════════════════════════════════════╝
 ```
 

@@ -21,10 +21,10 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║    Open to AI/ML Research Internships · Remote 
-          Building with LLMs & Agentic AI  
-╚══════════════════════════════════════════════════════════╝
+                               ╔══════════════════════════════════════════════════════════╗
+                                       Open to AI/ML Research Internships · Remote 
+                                           Building with LLMs & Agentic AI  
+                               ╚══════════════════════════════════════════════════════════╝
 ```
 
 </div>

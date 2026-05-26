@@ -77,6 +77,12 @@
 
 
 ---
+## 🔬 Open Source Contributions
+
+| Repository | Contribution | Link |
+|---|---|---|
+| pytorch/torchtune (Meta) | Fixed distributed training bug — config printing on every GPU rank | PR #2964 |
+| marimo (YC-backed) | Extended file browser API with regex + callable filter support | PR #9667 |
 
 ## 🛠️ &nbsp;Tech Arsenal
 

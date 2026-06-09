@@ -46,6 +46,17 @@
 
 ---
 
+### 🐕 codehound &nbsp;·&nbsp; [Repo ↗](https://github.com/kratos0718/codehound)
+
+> **AST-based Python static analyzer** — ~750 LOC, zero dependencies, CI on Python 3.9–3.12. Detects async-safety & correctness bugs: blocking calls in async, fire-and-forget tasks, mutable defaults, resource leaks. **A bug it found is merged into agno (25k⭐); more are under review at OpenAI and Future AGI.**
+
+`Python` &nbsp;`AST` &nbsp;`Static Analysis` &nbsp;`pytest` &nbsp;`CI/CD`
+
+🔍 **6 checks, each a real bug class** &nbsp;·&nbsp; 🐛 **Found bugs in production AI frameworks** &nbsp;·&nbsp; ⚙️ **CLI + JSON/CSV output**
+
+
+---
+
 ### 🎯 MarkMe &nbsp;·&nbsp; [Live ↗](https://mark-me-ih3h.vercel.app/)
 
 > **Smart Attendance Management System** — real-time attendance tracking for institutions. Sleek dark UI, animated transitions, and instant data feedback.
@@ -80,10 +91,20 @@
 ---
 ## 🔬 Open Source Contributions
 
-| Repository | Contribution | Link |
-|---|---|---|
-| pytorch/torchtune (Meta) | Fixed distributed training bug — config printing on every GPU rank | PR #2964 |
-| marimo (YC-backed) | Extended file browser API with regex + callable filter support | PR #9667 |
+> **9 pull requests merged** into major AI frameworks · code **shipped in a HuggingFace release** · **founder-invited** to contribute to Future AGI · several bugs surfaced by my own static analyzer, **[codehound](https://github.com/kratos0718/codehound)** 🐕
+
+| Repository | ⭐ | What I shipped | PR |
+|---|---|---|---|
+| **huggingface/huggingface_hub** | 2k | Documented 4 undocumented public API params — **shipped in v1.17.0** | [#4289](https://github.com/huggingface/huggingface_hub/pull/4289) |
+| **huggingface/accelerate** | 8k | Documented missing params across 3 public APIs | [#4051](https://github.com/huggingface/accelerate/pull/4051) |
+| **agno-agi/agno** | 25k | Fixed blocking `time.sleep` freezing the async event loop | [#8158](https://github.com/agno-agi/agno/pull/8158) |
+| **agno-agi/agno** | 25k | Fixed blocking `requests.get` in async Discord handler 🐕 _codehound_ | [#8186](https://github.com/agno-agi/agno/pull/8186) |
+| **agno-agi/agno** | 25k | Fixed file-handle leak in `transcribe_audio` | [#8161](https://github.com/agno-agi/agno/pull/8161) |
+| **pydantic/pydantic** | 22k | Fixed docstring defect in `create_model` | [#13239](https://github.com/pydantic/pydantic/pull/13239) |
+| **marimo-team/marimo** | 11k | New `filter` API on `mo.ui.file_browser()` (a feature) | [#9667](https://github.com/marimo-team/marimo/pull/9667) |
+| **mem0ai/mem0** | 35k | Fixed mutable default arguments (B006) + regression test | [#5302](https://github.com/mem0ai/mem0/pull/5302) |
+
+**Under review:** a fire-and-forget task fix in the **OpenAI Agents SDK** ([#3553](https://github.com/openai/openai-agents-python/pull/3553)) and a founder-invited fix in **Future AGI** ([#821](https://github.com/future-agi/future-agi/pull/821)) — both surfaced by codehound. Ranked **#64 contributor** on [agno](https://github.com/agno-agi/agno/graphs/contributors) (25k⭐).
 
 ## 🛠️ &nbsp;Tech Arsenal
 

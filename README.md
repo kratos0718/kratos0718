@@ -104,7 +104,7 @@
 | **marimo-team/marimo** | 11k | New `filter` API on `mo.ui.file_browser()` (a feature) | [#9667](https://github.com/marimo-team/marimo/pull/9667) |
 | **mem0ai/mem0** | 35k | Fixed mutable default arguments (B006) + regression test | [#5302](https://github.com/mem0ai/mem0/pull/5302) |
 
-**Under review:** a fire-and-forget task fix in the **OpenAI Agents SDK** ([#3553](https://github.com/openai/openai-agents-python/pull/3553)) and a founder-invited fix in **Future AGI** ([#821](https://github.com/future-agi/future-agi/pull/821)) — both surfaced by codehound. Ranked **#64 contributor** on [agno](https://github.com/agno-agi/agno/graphs/contributors) (25k⭐).
+**Under review:** a fire-and-forget task fix in the **OpenAI Agents SDK** ([#3553](https://github.com/openai/openai-agents-python/pull/3553)) and a founder-invited fix in **Future AGI** ([#821](https://github.com/future-agi/future-agi/pull/821)) — both surfaced by codehound. **4 PRs merged into [agno](https://github.com/agno-agi/agno/graphs/contributors)** (25k⭐), making me one of its most active recent contributors.
 
 ## 🛠️ &nbsp;Tech Arsenal
 

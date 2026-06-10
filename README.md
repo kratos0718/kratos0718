@@ -91,20 +91,83 @@
 ---
 ## 🔬 Open Source Contributions
 
-> **9 pull requests merged** into major AI frameworks · code **shipped in a HuggingFace release** · **founder-invited** to contribute to Future AGI · several bugs surfaced by my own static analyzer, **[codehound](https://github.com/kratos0718/codehound)** 🐕
+> Active contributor across **top-tier AI/ML repositories** — fixing real async-safety & correctness bugs, with **code shipped in a HuggingFace production release** and a **founder invitation** to contribute to Future AGI. Several bugs were surfaced by my own static analyzer, **[codehound](https://github.com/kratos0718/codehound)** 🐕.
 
-| Repository | ⭐ | What I shipped | PR |
-|---|---|---|---|
-| **huggingface/huggingface_hub** | 2k | Documented 4 undocumented public API params — **shipped in v1.17.0** | [#4289](https://github.com/huggingface/huggingface_hub/pull/4289) |
-| **huggingface/accelerate** | 8k | Documented missing params across 3 public APIs | [#4051](https://github.com/huggingface/accelerate/pull/4051) |
-| **agno-agi/agno** | 25k | Fixed blocking `time.sleep` freezing the async event loop | [#8158](https://github.com/agno-agi/agno/pull/8158) |
-| **agno-agi/agno** | 25k | Fixed blocking `requests.get` in async Discord handler 🐕 _codehound_ | [#8186](https://github.com/agno-agi/agno/pull/8186) |
-| **agno-agi/agno** | 25k | Fixed file-handle leak in `transcribe_audio` | [#8161](https://github.com/agno-agi/agno/pull/8161) |
-| **pydantic/pydantic** | 22k | Fixed docstring defect in `create_model` | [#13239](https://github.com/pydantic/pydantic/pull/13239) |
-| **marimo-team/marimo** | 11k | New `filter` API on `mo.ui.file_browser()` (a feature) | [#9667](https://github.com/marimo-team/marimo/pull/9667) |
-| **mem0ai/mem0** | 35k | Fixed mutable default arguments (B006) + regression test | [#5302](https://github.com/mem0ai/mem0/pull/5302) |
+<table>
+<tr>
+<td valign="top" width="160" align="center">
+<img src="https://github.com/huggingface.png" width="40"/><br/>
+<b>HuggingFace</b><br/>
+<sub>hub 2k⭐ · accelerate 8k⭐</sub>
+</td>
+<td valign="top">
+Documented undocumented public-API parameters across <code>huggingface_hub</code> and <code>accelerate</code>. The hub change <b>shipped in release v1.17.0</b> — live on PyPI for every install.<br/>
+<a href="https://github.com/huggingface/huggingface_hub/pull/4289">#4289</a> <a href="https://github.com/huggingface/accelerate/pull/4051">#4051</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
 
-**Under review:** a fire-and-forget task fix in the **OpenAI Agents SDK** ([#3553](https://github.com/openai/openai-agents-python/pull/3553)) and a founder-invited fix in **Future AGI** ([#821](https://github.com/future-agi/future-agi/pull/821)) — both surfaced by codehound. **4 PRs merged into [agno](https://github.com/agno-agi/agno/graphs/contributors)** (25k⭐), making me one of its most active recent contributors.
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/agno-agi.png" width="40"/><br/>
+<b>agno</b><br/>
+<sub>25k⭐ · top recent contributor</sub>
+</td>
+<td valign="top">
+Fixed blocking <code>time.sleep</code> and <code>requests.get</code> freezing the async event loop, plus a file-handle leak in <code>transcribe_audio</code>. The Discord-handler bug was <b>found by codehound</b> 🐕.<br/>
+<a href="https://github.com/agno-agi/agno/pull/8158">#8158</a> <a href="https://github.com/agno-agi/agno/pull/8186">#8186</a> <a href="https://github.com/agno-agi/agno/pull/8161">#8161</a> <a href="https://github.com/agno-agi/agno/pull/8138">#8138</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/mem0ai.png" width="40"/><br/>
+<b>mem0</b><br/>
+<sub>35k⭐</sub>
+</td>
+<td valign="top">
+Fixed mutable default arguments (B006) in <code>Completions.create</code> and <code>BaseEmbedderConfig</code>, with a regression test guarding against reverts.<br/>
+<a href="https://github.com/mem0ai/mem0/pull/5302">#5302</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/pydantic.png" width="40"/><br/>
+<b>pydantic</b><br/>
+<sub>22k⭐</sub>
+</td>
+<td valign="top">
+Fixed a docstring defect in <code>create_model</code>, reviewed and merged by a core maintainer.<br/>
+<a href="https://github.com/pydantic/pydantic/pull/13239">#13239</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/marimo-team.png" width="40"/><br/>
+<b>marimo</b><br/>
+<sub>11k⭐ · YC</sub>
+</td>
+<td valign="top">
+Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <code>mo.ui.file_browser()</code> (regex / pattern / callable). A feature, not just a fix.<br/>
+<a href="https://github.com/marimo-team/marimo/pull/9667">#9667</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/openai.png" width="40"/><br/>
+<b>OpenAI</b> · <b>Future AGI</b><br/>
+<sub>Agents SDK · founder-invited</sub>
+</td>
+<td valign="top">
+Fixed fire-and-forget tasks that can be garbage-collected mid-run (silent drops) in the <b>OpenAI Agents SDK</b> and in <b>Future AGI</b> — the latter on a personal invite from the founder. Both <b>found by codehound</b> 🐕.<br/>
+<a href="https://github.com/openai/openai-agents-python/pull/3553">openai #3553</a> <a href="https://github.com/future-agi/future-agi/pull/821">future-agi #821</a> <img src="https://img.shields.io/badge/UNDER%20REVIEW-DBAB0A?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+</table>
+
+<sub>📊 <b>9 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults · more open at OpenAI, litellm, ragas.</sub>
 
 ## 🛠️ &nbsp;Tech Arsenal
 
@@ -131,12 +194,6 @@
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kratos0718&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kratos0718&layout=compact&langs_count=6&theme=radical&hide_border=true&bg_color=0d1117"/>
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=kratos0718&theme=radical&hide_border=true&background=0d1117&ring=FF006E&fire=FB5607&currStreakLabel=06FFB4)](https://git.io/streak-stats)
 
 </div>
 

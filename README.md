@@ -96,6 +96,18 @@
 <table>
 <tr>
 <td valign="top" width="160" align="center">
+<img src="https://github.com/unslothai.png" width="40"/><br/>
+<b>unsloth</b><br/>
+<sub>40k⭐</sub>
+</td>
+<td valign="top">
+Fixed a blocking <code>time.sleep</code> (up to 30s) freezing the async event loop in the model-export route — <b>found by codehound</b> 🐕. Merged into main.<br/>
+<a href="https://github.com/unslothai/unsloth/pull/6135">#6135</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
 <img src="https://github.com/huggingface.png" width="40"/><br/>
 <b>HuggingFace</b><br/>
 <sub>hub 2k⭐ · accelerate 8k⭐</sub>
@@ -156,18 +168,19 @@ Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <c
 
 <tr>
 <td valign="top" align="center">
-<img src="https://github.com/openai.png" width="40"/><br/>
+<img src="https://github.com/vllm-project.png" width="40"/><br/>
+<b>vLLM</b> · <b>Microsoft autogen</b><br/>
 <b>OpenAI</b> · <b>Future AGI</b><br/>
-<sub>Agents SDK · founder-invited</sub>
+<sub>fire-and-forget fixes</sub>
 </td>
 <td valign="top">
-Fixed fire-and-forget tasks that can be garbage-collected mid-run (silent drops) in the <b>OpenAI Agents SDK</b> and in <b>Future AGI</b> — the latter on a personal invite from the founder. Both <b>found by codehound</b> 🐕.<br/>
-<a href="https://github.com/openai/openai-agents-python/pull/3553">openai #3553</a> <a href="https://github.com/future-agi/future-agi/pull/821">future-agi #821</a> <img src="https://img.shields.io/badge/UNDER%20REVIEW-DBAB0A?style=flat-square&logo=github&logoColor=white"/>
+Fixed fire-and-forget <code>asyncio</code> tasks that can be garbage-collected mid-run (silent drops) across <b>vLLM</b> (the LLM serving standard), <b>Microsoft autogen</b>, the <b>OpenAI Agents SDK</b>, and <b>Future AGI</b> (a personal invite from the founder). All <b>found by codehound</b> 🐕.<br/>
+<a href="https://github.com/vllm-project/vllm/pull/45249">vllm #45249</a> <a href="https://github.com/microsoft/autogen/pull/7825">autogen #7825</a> <a href="https://github.com/openai/openai-agents-python/pull/3553">openai #3553</a> <a href="https://github.com/future-agi/future-agi/pull/821">future-agi #821</a> <img src="https://img.shields.io/badge/UNDER%20REVIEW-DBAB0A?style=flat-square&logo=github&logoColor=white"/>
 </td>
 </tr>
 </table>
 
-<sub>📊 <b>9 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults · more open at OpenAI, litellm, ragas.</sub>
+<sub>📊 <b>10 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults · more open at vLLM, Microsoft autogen, OpenAI, litellm.</sub>
 
 ## 🛠️ &nbsp;Tech Arsenal
 

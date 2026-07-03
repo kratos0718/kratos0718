@@ -68,7 +68,7 @@
 
 ---
 
-### 💼 Portfolio Pro &nbsp;·&nbsp; [Live ↗](https://portfolio-ivory-nine-89.vercel.app/)
+### 💼 Portfolio Pro &nbsp;·&nbsp; [Live ↗](https://www.abhinavbuilds.online/)
 
 > **Production portfolio** — AI Engineer & Full-Stack Developer identity built with component-driven TypeScript architecture and deployed to the web.
 

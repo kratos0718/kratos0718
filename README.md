@@ -157,11 +157,30 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list: [ORCID](https://
 
 ### 🚀 Selected projects
 
-- **PathForge** — AI placement-prep platform; RAG over FAISS with a skill-gap scoring layer · [pathforge.online](https://www.pathforge.online/)
-- **MarkMe** — attendance system: face recognition + GPS geo-fencing + rotating session keys · [live](https://mark-me-ih3h.vercel.app/)
-- **SoulSync** — transformer-based emotion classification for mental-health support (SIH 2024)
+<table>
+<tr>
+<td width="50%" align="center">
+<a href="https://www.pathforge.online/"><img src="https://raw.githubusercontent.com/kratos0718/portfolio/main/public/logos/projects/pathforge.svg" width="100%"/></a><br/>
+<b>PathForge</b><br/><sub>AI placement-prep platform — RAG over FAISS with a skill-gap scoring layer</sub>
+</td>
+<td width="50%" align="center">
+<a href="https://mark-me-ih3h.vercel.app/"><img src="https://raw.githubusercontent.com/kratos0718/portfolio/main/public/logos/projects/markme.svg" width="100%"/></a><br/>
+<b>MarkMe</b><br/><sub>Attendance — face recognition + GPS geo-fencing + rotating session keys</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+<a href="https://soulsyncfinal.vercel.app/"><img src="https://raw.githubusercontent.com/kratos0718/portfolio/main/public/logos/projects/soulsync.svg" width="100%"/></a><br/>
+<b>SoulSync</b><br/><sub>Transformer-based emotion classification for mental-health support (SIH 2024)</sub>
+</td>
+<td width="50%" align="center">
+<a href="https://github.com/kratos0718"><img src="https://raw.githubusercontent.com/kratos0718/portfolio/main/public/logos/projects/papermind.svg" width="100%"/></a><br/>
+<b>PaperMind</b><br/><sub>RAG arXiv explainer with streaming responses & D3.js knowledge graphs</sub>
+</td>
+</tr>
+</table>
 
-More at [abhinavbuilds.online](https://www.abhinavbuilds.online/).
+<p align="center"><sub>More at <a href="https://www.abhinavbuilds.online/">abhinavbuilds.online</a></sub></p>
 
 ---
 

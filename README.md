@@ -1,8 +1,9 @@
-<h1 align="center">Abhinav Tarigoppula</h1>
+<p align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Abhinav Tarigoppula — AI/ML Engineer · Open-Source Contributor"/>
+</p>
 
 <p align="center">
-  <b>AI/ML Engineer · Open-Source Contributor</b><br/>
-  Final-year B.Tech CSE (AI/ML), GITAM University · Visakhapatnam, India
+  <i>Final-year B.Tech CSE (AI/ML), GITAM University · Visakhapatnam, India</i>
 </p>
 
 <p align="center">

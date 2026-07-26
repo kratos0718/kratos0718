@@ -48,7 +48,7 @@
 
 ### 🐕 codehound &nbsp;·&nbsp; [Repo ↗](https://github.com/kratos0718/codehound)
 
-> **AST-based Python static analyzer** — ~750 LOC, zero dependencies, CI on Python 3.9–3.12. Detects async-safety & correctness bugs: blocking calls in async, fire-and-forget tasks, mutable defaults, resource leaks. **A bug it found is merged into agno (25k⭐); more are under review at OpenAI and Future AGI.**
+> **AST-based Python static analyzer** — ~750 LOC, zero dependencies, CI on Python 3.9–3.12. Detects async-safety & correctness bugs: blocking calls in async, fire-and-forget tasks, mutable defaults, resource leaks. **Bugs it found are merged into pydantic-ai, prowler, agno & unsloth — with more under review at vLLM and Weaviate.**
 
 `Python` &nbsp;`AST` &nbsp;`Static Analysis` &nbsp;`pytest` &nbsp;`CI/CD`
 
@@ -168,19 +168,43 @@ Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <c
 
 <tr>
 <td valign="top" align="center">
-<img src="https://github.com/vllm-project.png" width="40"/><br/>
-<b>vLLM</b> · <b>Microsoft autogen</b><br/>
-<b>OpenAI</b> · <b>Future AGI</b><br/>
-<sub>fire-and-forget fixes</sub>
+<img src="https://github.com/pydantic.png" width="40"/><br/>
+<b>pydantic-ai</b><br/>
+<sub>11k⭐ · agent framework</sub>
 </td>
 <td valign="top">
-Fixed fire-and-forget <code>asyncio</code> tasks that can be garbage-collected mid-run (silent drops) across <b>vLLM</b> (the LLM serving standard), <b>Microsoft autogen</b>, the <b>OpenAI Agents SDK</b>, and <b>Future AGI</b> (a personal invite from the founder). All <b>found by codehound</b> 🐕.<br/>
-<a href="https://github.com/vllm-project/vllm/pull/45249">vllm #45249</a> <a href="https://github.com/microsoft/autogen/pull/7825">autogen #7825</a> <a href="https://github.com/openai/openai-agents-python/pull/3553">openai #3553</a> <a href="https://github.com/future-agi/future-agi/pull/821">future-agi #821</a> <img src="https://img.shields.io/badge/UNDER%20REVIEW-DBAB0A?style=flat-square&logo=github&logoColor=white"/>
+Fixed a shared mutable-default <code>deque</code> in <code>process_tool_calls</code> that leaked one run's final result into the next — <b>found by codehound</b> 🐕. Reviewed & merged by a maintainer the same day.<br/>
+<a href="https://github.com/pydantic/pydantic-ai/pull/6189">#6189</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/prowler-cloud.png" width="40"/><br/>
+<b>prowler</b><br/>
+<sub>14k⭐ · cloud security</sub>
+</td>
+<td valign="top">
+Fixed an Azure Flexible Server check reading log-retention from the wrong config key, with a regression test. CodeRabbit-approved, merged by a maintainer.<br/>
+<a href="https://github.com/prowler-cloud/prowler/pull/11761">#11761</a> <img src="https://img.shields.io/badge/MERGED-2EA043?style=flat-square&logo=github&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/vllm-project.png" width="40"/><br/>
+<b>vLLM</b> · <b>Microsoft autogen</b><br/>
+<b>Weaviate</b> · <b>Future AGI</b><br/>
+<sub>concurrency fixes</sub>
+</td>
+<td valign="top">
+Open PRs: fire-and-forget <code>asyncio</code> tasks that can be GC'd mid-run (silent drops) at <b>vLLM</b> (the LLM-serving standard) and <b>Microsoft autogen</b>; a blocking <code>time.sleep</code> in an async retry loop at <b>Weaviate</b>; and background-task tracking at <b>Future AGI</b> (a personal invite from the founder). <b>Found by codehound</b> 🐕.<br/>
+<a href="https://github.com/vllm-project/vllm/pull/45249">vllm #45249</a> <a href="https://github.com/microsoft/autogen/pull/7825">autogen #7825</a> <a href="https://github.com/weaviate/weaviate-python-client/pull/2104">weaviate #2104</a> <a href="https://github.com/future-agi/future-agi/pull/821">future-agi #821</a> <img src="https://img.shields.io/badge/UNDER%20REVIEW-DBAB0A?style=flat-square&logo=github&logoColor=white"/>
 </td>
 </tr>
 </table>
 
-<sub>📊 <b>10 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults · more open at vLLM, Microsoft autogen, OpenAI, litellm.</sub>
+<sub>📊 <b>14 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults · more open at vLLM, Microsoft autogen, Weaviate & Future AGI.</sub>
 
 ## 🛠️ &nbsp;Tech Arsenal
 
@@ -240,8 +264,9 @@ Fixed fire-and-forget <code>asyncio</code> tasks that can be garbage-collected m
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=06FFB4)](https://portfolio-ivory-nine-89.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=06FFB4)](https://www.abhinavbuilds.online/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhinav0702/)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-1542-0221)
 [![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhinaaavvv07187@gmail.com)
 
 <br/>

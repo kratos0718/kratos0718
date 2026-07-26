@@ -6,11 +6,6 @@
 </p>
 
 <p align="center">
-  I build tools that make AI/ML systems more reliable — static analysis, concurrency safety, and applied ML.<br/>
-  Author of <a href="https://github.com/kratos0718/codehound">codehound</a> &nbsp;·&nbsp; 14 PRs merged into major AI frameworks &nbsp;·&nbsp; Computer-vision research intern.
-</p>
-
-<p align="center">
   <a href="https://www.linkedin.com/in/abhinav0702/">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://orcid.org/0009-0005-1542-0221">ORCID</a> &nbsp;·&nbsp;
   <a href="https://www.abhinavbuilds.online/">Portfolio</a> &nbsp;·&nbsp;
@@ -19,23 +14,49 @@
 
 ---
 
-### What I work on
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **14 PRs merged** into major AI frameworks, and a computer-vision research intern.
 
-- **Reliability & static analysis** — [codehound](https://github.com/kratos0718/codehound), an AST-based analyzer that finds async-safety, concurrency, and resource bugs in Python AI code. Bugs it surfaced are merged into unsloth, agno, and pydantic-ai.
-- **Open source** — 14 PRs merged across 18+ organizations, mostly real bug fixes in async/concurrency-heavy AI infrastructure.
-- **Applied ML / Computer Vision** — YOLOv8 + MiDaS defect-detection pipelines for a state power utility (APEPDCL); LLM/RAG systems.
+<table>
+<tr>
+<td valign="top" width="52%">
+
+**Currently**
+
+- 🔭 CV research intern @ **APEPDCL** — YOLOv8 + MiDaS defect detection for a state power utility
+- 🐕 building **codehound** — a static analyzer that finds real bugs in AI codebases
+- 📄 co-authoring research (ML for education, AI proctoring) — under review / preprint
+- 🌱 learning: LoRA/PEFT fine-tuning, vision-language models
+- 🎯 targeting AI/ML research roles & a funded MS
+
+</td>
+<td valign="top">
+
+**At a glance**
+
+```text
+Merged PRs   14  ·  18+ orgs
+Flagship     codehound (AST analyzer)
+Bug classes  async-blocking, task GC,
+             resource leaks, B006
+Research     3 papers (IEEE, under review)
+Stack        Python · PyTorch · CV · LLMs
+```
+
+</td>
+</tr>
+</table>
 
 ---
 
 ### 🐕 codehound — [github.com/kratos0718/codehound](https://github.com/kratos0718/codehound)
 
-An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Python 3.9–3.12.** It detects six real bug classes: event-loop-blocking calls inside `async` functions, fire-and-forget tasks that can be garbage-collected mid-run, mutable default arguments, unclosed file handles, and deprecated event-loop APIs. Several of the fixes below were surfaced by it.
+An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Python 3.9–3.12.** It detects six real bug classes: event-loop-blocking calls inside `async` functions, fire-and-forget tasks that can be garbage-collected mid-run, mutable default arguments, unclosed file handles, and deprecated event-loop APIs. Several of the merged fixes below were surfaced by it.
 
 ---
 
-### Open-source contributions
+### 🔧 Open-source contributions
 
-Real bug fixes across widely-used AI/ML repositories — event-loop-blocking calls, fire-and-forget tasks, resource leaks, and mutable defaults. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI). Several bugs were surfaced by [codehound](https://github.com/kratos0718/codehound).
+Real bug fixes across widely-used AI/ML repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <table>
 <tr>
@@ -44,7 +65,7 @@ Real bug fixes across widely-used AI/ML repositories — event-loop-blocking cal
 <b>unsloth</b><br/><sub>40k⭐</sub>
 </td>
 <td valign="top">
-Fixed a blocking <code>time.sleep</code> (up to 30s) freezing the async event loop in the model-export route — <b>found by codehound</b>. Merged into main.<br/>
+Blocking <code>time.sleep</code> (up to 30s) freezing the async event loop in the model-export route — <b>found by codehound</b>.<br/>
 <a href="https://github.com/unslothai/unsloth/pull/6135">#6135</a> · <b>merged</b>
 </td>
 </tr>
@@ -54,7 +75,7 @@ Fixed a blocking <code>time.sleep</code> (up to 30s) freezing the async event lo
 <b>pydantic-ai</b><br/><sub>11k⭐</sub>
 </td>
 <td valign="top">
-Fixed a shared mutable-default <code>deque</code> in <code>process_tool_calls</code> that leaked one run's final result into the next — <b>found by codehound</b>. Merged the same day.<br/>
+Shared mutable-default <code>deque</code> in <code>process_tool_calls</code> leaking one run's result into the next — <b>found by codehound</b>. Merged same day.<br/>
 <a href="https://github.com/pydantic/pydantic-ai/pull/6189">#6189</a> · <b>merged</b>
 </td>
 </tr>
@@ -64,7 +85,7 @@ Fixed a shared mutable-default <code>deque</code> in <code>process_tool_calls</c
 <b>prowler</b><br/><sub>14k⭐</sub>
 </td>
 <td valign="top">
-Fixed an Azure Flexible Server check reading log-retention from the wrong config key, with a regression test. CodeRabbit-approved, merged by a maintainer.<br/>
+Azure Flexible Server check reading log-retention from the wrong config key, with a regression test. Merged by a maintainer.<br/>
 <a href="https://github.com/prowler-cloud/prowler/pull/11761">#11761</a> · <b>merged</b>
 </td>
 </tr>
@@ -74,7 +95,7 @@ Fixed an Azure Flexible Server check reading log-retention from the wrong config
 <b>agno</b><br/><sub>25k⭐</sub>
 </td>
 <td valign="top">
-Fixed blocking <code>time.sleep</code> and <code>requests.get</code> freezing the async event loop, plus a file-handle leak in <code>transcribe_audio</code>. The Discord-handler bug was <b>found by codehound</b>.<br/>
+Blocking <code>time.sleep</code> / <code>requests.get</code> in async, plus a file-handle leak in <code>transcribe_audio</code>. Discord-handler bug <b>found by codehound</b>.<br/>
 <a href="https://github.com/agno-agi/agno/pull/8158">#8158</a> · <a href="https://github.com/agno-agi/agno/pull/8186">#8186</a> · <a href="https://github.com/agno-agi/agno/pull/8161">#8161</a> · <a href="https://github.com/agno-agi/agno/pull/8138">#8138</a> · <b>merged</b>
 </td>
 </tr>
@@ -84,7 +105,7 @@ Fixed blocking <code>time.sleep</code> and <code>requests.get</code> freezing th
 <b>mem0</b><br/><sub>35k⭐</sub>
 </td>
 <td valign="top">
-Fixed mutable default arguments (B006) in <code>Completions.create</code> and <code>BaseEmbedderConfig</code>, with a regression test.<br/>
+Mutable default arguments (B006) in <code>Completions.create</code> and <code>BaseEmbedderConfig</code>, with a regression test.<br/>
 <a href="https://github.com/mem0ai/mem0/pull/5302">#5302</a> · <b>merged</b>
 </td>
 </tr>
@@ -94,7 +115,7 @@ Fixed mutable default arguments (B006) in <code>Completions.create</code> and <c
 <b>HuggingFace</b><br/><sub>hub · accelerate · peft</sub>
 </td>
 <td valign="top">
-Documented undocumented public-API parameters across <code>huggingface_hub</code>, <code>accelerate</code>, and <code>peft</code>. The hub change <b>shipped in release v1.17.0</b> — live on PyPI for every install.<br/>
+Documented undocumented public-API parameters. The hub change <b>shipped in release v1.17.0</b> — live on PyPI.<br/>
 <a href="https://github.com/huggingface/huggingface_hub/pull/4289">hub #4289</a> · <a href="https://github.com/huggingface/accelerate/pull/4051">accelerate #4051</a> · <b>merged</b>
 </td>
 </tr>
@@ -104,7 +125,7 @@ Documented undocumented public-API parameters across <code>huggingface_hub</code
 <b>marimo</b><br/><sub>11k⭐ · YC</sub>
 </td>
 <td valign="top">
-Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <code>mo.ui.file_browser()</code> (regex / pattern / callable).<br/>
+Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <code>mo.ui.file_browser()</code>.<br/>
 <a href="https://github.com/marimo-team/marimo/pull/9667">#9667</a> · <b>merged</b>
 </td>
 </tr>
@@ -114,38 +135,50 @@ Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <c
 <b>vLLM · autogen</b><br/><sub>Weaviate · Future AGI</sub>
 </td>
 <td valign="top">
-Open PRs: fire-and-forget <code>asyncio</code> tasks that can be GC'd mid-run at <b>vLLM</b> and <b>Microsoft autogen</b>; a blocking <code>time.sleep</code> in an async retry loop at <b>Weaviate</b>; background-task tracking at <b>Future AGI</b> (a founder invite). <b>Found by codehound</b>.<br/>
+Open PRs: fire-and-forget <code>asyncio</code> tasks at <b>vLLM</b> and <b>Microsoft autogen</b>; blocking sleep in an async retry loop at <b>Weaviate</b>; background-task tracking at <b>Future AGI</b> (founder invite). <b>Found by codehound</b>.<br/>
 <a href="https://github.com/vllm-project/vllm/pull/45249">vllm #45249</a> · <a href="https://github.com/microsoft/autogen/pull/7825">autogen #7825</a> · <a href="https://github.com/weaviate/weaviate-python-client/pull/2104">weaviate #2104</a> · <i>under review</i>
 </td>
 </tr>
 </table>
 
-<sub><b>14 PRs merged</b> across <b>18+ organizations</b> · bug classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults.</sub>
+<sub><b>14 PRs merged</b> · <b>18+ organizations</b> · classes: event-loop blocking, fire-and-forget tasks, resource leaks, mutable defaults.</sub>
 
 ---
 
-### Selected projects
+### 📄 Research
 
-- **PathForge** — AI placement-prep platform; RAG over FAISS with a skill-gap scoring layer. · [pathforge.online](https://www.pathforge.online/)
-- **MarkMe** — attendance system with face recognition, GPS geo-fencing, and rotating session keys. · [live](https://mark-me-ih3h.vercel.app/)
-- **SoulSync** — transformer-based emotion classification for mental-health support (SIH 2024).
+Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list: [ORCID](https://orcid.org/0009-0005-1542-0221) · [ResearchGate](https://www.researchgate.net/profile/Abhinav-Tarigoppula))*
+
+- **Student-Performance Prediction with Ensemble Methods & XAI** — *submitted, IEEE ISED 2026 (NIT Warangal)* · first author
+- **Behavior-Driven Adaptive Learning Agents for Personalized Education** — *under review, IEEE*
+- **HAPS: Hybrid AI Proctoring (dual-stream CNNs + YOLO)** — *preprint*
+
+---
+
+### 🚀 Selected projects
+
+- **PathForge** — AI placement-prep platform; RAG over FAISS with a skill-gap scoring layer · [pathforge.online](https://www.pathforge.online/)
+- **MarkMe** — attendance system: face recognition + GPS geo-fencing + rotating session keys · [live](https://mark-me-ih3h.vercel.app/)
+- **SoulSync** — transformer-based emotion classification for mental-health support (SIH 2024)
 
 More at [abhinavbuilds.online](https://www.abhinavbuilds.online/).
 
 ---
 
-### Tech
+### 🛠 Tech
 
-**Languages:** Python · Java · JavaScript/TypeScript
-**ML / AI:** PyTorch · TensorFlow · scikit-learn · OpenCV · LangChain
-**Backend & infra:** FastAPI · Node.js · PostgreSQL · Docker · Git
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,pytorch,tensorflow,sklearn,opencv,fastapi,react,docker,postgres,git&theme=dark" alt="tech stack" />
+</p>
+
+<sub>Python · Java · PyTorch · TensorFlow · scikit-learn · OpenCV · LangChain · FastAPI · React/Node · PostgreSQL · Docker · Git</sub>
 
 ---
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=kratos0718&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kratos0718&layout=compact&langs_count=6&theme=github_dark&hide_border=true"/>
+<img height="150" src="https://github-readme-stats.vercel.app/api?username=kratos0718&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true"/>
+<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kratos0718&layout=compact&langs_count=6&theme=github_dark&hide_border=true"/>
 
 <br/><br/>
 

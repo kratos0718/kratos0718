@@ -13,10 +13,6 @@
   <a href="mailto:abhinaaavvv07187@gmail.com">Email</a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kratos0718&style=flat-square&color=8250df&label=profile+views" alt="profile views"/>
-</p>
-
 ---
 
 I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **15 PRs merged** into major AI frameworks with a combined 300k+ stars.
@@ -248,5 +244,9 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate]
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kratos0718/kratos0718/output/github-contribution-grid-snake-dark.svg"/>
   <img alt="contribution snake" src="https://raw.githubusercontent.com/kratos0718/kratos0718/output/github-contribution-grid-snake.svg"/>
 </picture>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=kratos0718&style=flat-square&color=8250df&label=profile%20views" alt="profile views"/>
 
 </div>

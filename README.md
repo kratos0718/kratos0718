@@ -23,7 +23,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 
 **Currently**
 
-- 🔭 CV research intern @ **APEPDCL** — YOLOv8 + MiDaS defect detection for a state power utility
+- 🔭 built **DocGuard-VLM** — QLoRA fine-tuned Qwen2-VL for document extraction + forgery detection
 - 🐕 building **codehound** — a static analyzer that finds real bugs in AI codebases
 - 📄 co-authoring research (ML for education, AI proctoring) — under review / preprint
 - 🌱 learning: LoRA/PEFT fine-tuning, vision-language models

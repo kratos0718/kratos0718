@@ -53,6 +53,8 @@ Stack        Python · Java · PyTorch · LLMs
 
 An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Python 3.9–3.12.** It detects six real bug classes: event-loop-blocking calls inside `async` functions, fire-and-forget tasks that can be garbage-collected mid-run, mutable default arguments, unclosed file handles, and deprecated event-loop APIs. Several of the merged fixes below were surfaced by it.
 
+<a href="https://github.com/kratos0718/codehound"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View repository"/></a>
+
 ---
 
 ### 🔧 Open-source contributions
@@ -160,6 +162,11 @@ Blocking <code>time.sleep</code> in async <code>wait_for_weaviate</code> — <b>
 
 <sub><b>15 PRs merged</b> · <b>9 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
+<p>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_15_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 15 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
+</p>
+
 **Currently under review** — beyond Python/AI, into new languages and domains:
 
 <p>
@@ -182,6 +189,8 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate]
   <br/><img src="https://img.shields.io/badge/accepted-1a7f37?style=flat-square" alt="accepted"/> 14th International Conference on Intelligent Systems and Embedded Design (**ISED 2026**), NIT Warangal · Publisher: **IEEE**
 - **Behavior-Driven Adaptive Learning Agents for Personalized Education** — *under review, IEEE*
 - **HAPS: Hybrid AI Proctoring (dual-stream CNNs + YOLO)** — *preprint*
+
+<a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/View_full_publication_list-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="View full publication list"/></a>
 
 ---
 
@@ -210,7 +219,7 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate]
 </tr>
 </table>
 
-<p align="center"><sub>More at <a href="https://www.abhinavbuilds.online/">abhinavbuilds.online</a></sub></p>
+<p align="center"><a href="https://www.abhinavbuilds.online/"><img src="https://img.shields.io/badge/View_more_projects_·_abhinavbuilds.online-8250df?style=flat-square&logo=vercel&logoColor=white" alt="View more projects · abhinavbuilds.online"/></a></p>
 
 ---
 

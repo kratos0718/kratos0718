@@ -1,7 +1,3 @@
-<p align="right">
-  <img src="https://komarev.com/ghpvc/?username=kratos0718&style=flat-square&color=8250df&label=profile%20views" alt="profile views"/>
-</p>
-
 <p align="center">
   <img src="./assets/banner.svg" width="100%" alt="Abhinav Tarigoppula — AI/ML Engineer · Open-Source Contributor"/>
 </p>
@@ -15,6 +11,14 @@
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula">ResearchGate</a> &nbsp;·&nbsp;
   <a href="https://www.abhinavbuilds.online/">Portfolio</a> &nbsp;·&nbsp;
   <a href="mailto:abhinaaavvv07187@gmail.com">Email</a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=kratos0718&label=profile%20views&style=flat-square&color=2dd4bf&labelColor=0d1117" alt="profile views"/>
+  &nbsp;
+  <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
+  &nbsp;
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-15-2dd4bf?style=flat-square&labelColor=0d1117" alt="15 merged PRs"/></a>
 </p>
 
 ---

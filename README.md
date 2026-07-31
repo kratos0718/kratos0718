@@ -1,3 +1,7 @@
+<p align="right">
+  <img src="https://komarev.com/ghpvc/?username=kratos0718&style=flat-square&color=8250df&label=profile%20views" alt="profile views"/>
+</p>
+
 <p align="center">
   <img src="./assets/banner.svg" width="100%" alt="Abhinav Tarigoppula — AI/ML Engineer · Open-Source Contributor"/>
 </p>
@@ -244,9 +248,5 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate]
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kratos0718/kratos0718/output/github-contribution-grid-snake-dark.svg"/>
   <img alt="contribution snake" src="https://raw.githubusercontent.com/kratos0718/kratos0718/output/github-contribution-grid-snake.svg"/>
 </picture>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=kratos0718&style=flat-square&color=8250df&label=profile%20views" alt="profile views"/>
 
 </div>

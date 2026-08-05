@@ -33,7 +33,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 
 - 🔭 built **DocGuard-VLM** — QLoRA fine-tuned Qwen2-VL for document extraction + forgery detection
 - 🐕 building **codehound** — a static analyzer that finds real bugs in AI codebases
-- 📄 first-author paper **accepted at IEEE ISED 2026**, NIT Warangal
+- 📄 co-author paper **accepted at IEEE ISED 2026**, NIT Warangal
 - 🌱 learning: LoRA/PEFT fine-tuning, vision-language models
 - 🎯 targeting AI/ML research roles & a funded MS
 

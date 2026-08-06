@@ -18,12 +18,12 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-15-2dd4bf?style=flat-square&labelColor=0d1117" alt="15 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-17-2dd4bf?style=flat-square&labelColor=0d1117" alt="17 merged PRs"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **15 PRs merged** into major AI frameworks with a combined 300k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **17 PRs merged** into major AI frameworks with a combined 300k+ stars.
 
 <table>
 <tr>
@@ -43,7 +43,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   15  ·  9 orgs  ·  300k+ ⭐
+Merged PRs   17  ·  11 orgs  ·  300k+ ⭐
 Flagship     codehound (AST analyzer)
 Bug classes  async-blocking, task GC,
              resource leaks, B006
@@ -70,8 +70,8 @@ An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Pyt
 Real bug fixes across widely-used AI/ML repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-15-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="15 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-9-0969da?style=for-the-badge&logo=github&logoColor=white" alt="9 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-17-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="17 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-11-0969da?style=for-the-badge&logo=github&logoColor=white" alt="11 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-300k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="300k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -143,7 +143,7 @@ Mutable default arguments (B006) in <code>Completions.create</code> and <code>Ba
 </td>
 <td valign="top">
 Documented undocumented public-API parameters. The hub change <b>shipped in release v1.17.0</b> — live on PyPI.<br/>
-<a href="https://github.com/huggingface/huggingface_hub/pull/4289">hub #4289</a> · <a href="https://github.com/huggingface/accelerate/pull/4051">accelerate #4051</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+<a href="https://github.com/huggingface/huggingface_hub/pull/4289">hub #4289</a> · <a href="https://github.com/huggingface/accelerate/pull/4051">accelerate #4051</a> · <a href="https://github.com/huggingface/peft/pull/3271">peft #3271</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -166,19 +166,28 @@ Blocking <code>time.sleep</code> in async <code>wait_for_weaviate</code> — <b>
 <a href="https://github.com/weaviate/weaviate-python-client/pull/2104">weaviate #2104</a> · <a href="https://github.com/xorbitsai/inference/pull/5055">xinference #5055</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/apache.png" width="34"/><br/>
+<b>Apache Maven · Mercari</b><br/><sub>Java · build &amp; data</sub>
+</td>
+<td valign="top">
+Test asserting on the wrong path so it could not fail, in the Maven source plugin. At <b>Mercari</b>, Avro <code>timestamp-micros</code> truncated to milliseconds on the JDBC path, silently losing sub-millisecond data.<br/>
+<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/mercari/pipeline/pull/119">pipeline #119</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
 </table>
 
-<sub><b>15 PRs merged</b> · <b>9 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>17 PRs merged</b> · <b>11 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_15_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 15 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_17_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 17 merged PRs"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
 
 **Currently under review** — beyond Python/AI, into new languages and domains:
 
 <p>
-  <a href="https://github.com/mercari/pipeline/pull/119"><img src="https://img.shields.io/badge/Mercari-Java_·_timestamp_precision-b07219?style=flat-square&logo=openjdk&logoColor=white" alt="mercari"/></a>
   <a href="https://github.com/lextudio/pysnmp/pull/248"><img src="https://img.shields.io/badge/pysnmp-SNMP_index_decoding-3572A5?style=flat-square&logo=python&logoColor=white" alt="pysnmp"/></a>
   <a href="https://github.com/vllm-project/vllm/pull/45249"><img src="https://img.shields.io/badge/vLLM-87k⭐-000000?style=flat-square" alt="vllm"/></a>
   <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-60k⭐-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>

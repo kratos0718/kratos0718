@@ -193,7 +193,7 @@ Test asserting on the wrong path so it could not fail, in the Maven source plugi
   <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-60k⭐-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>
   <a href="https://github.com/BerriAI/litellm/pull/34711"><img src="https://img.shields.io/badge/litellm-55k⭐-1a7f37?style=flat-square" alt="litellm"/></a>
   <a href="https://github.com/dask/dask/pull/12482"><img src="https://img.shields.io/badge/Dask-13k⭐-FDA061?style=flat-square&logo=dask&logoColor=black" alt="dask"/></a>
-  <a href="https://github.com/future-agi/future-agi/pull/821"><img src="https://img.shields.io/badge/Future_AGI-founder_invite-8250df?style=flat-square" alt="future-agi"/></a>
+  <a href="https://github.com/agentscope-ai/agentscope-java/pull/2543"><img src="https://img.shields.io/badge/AgentScope_Java-4.8k⭐-b07219?style=flat-square&logo=openjdk&logoColor=white" alt="agentscope-java"/></a>
 </p>
 
 ---

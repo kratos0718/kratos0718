@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-18-2dd4bf?style=flat-square&labelColor=0d1117" alt="18 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-20-2dd4bf?style=flat-square&labelColor=0d1117" alt="20 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **18 PRs merged** into major AI frameworks with a combined 300k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **20 PRs merged** into major AI frameworks with a combined 300k+ stars.
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   18  ·  11 orgs  ·  300k+ ⭐
+Merged PRs   20  ·  12 orgs  ·  300k+ ⭐
 Flagship     codehound (AST analyzer)
 Bug classes  async-blocking, task GC,
              resource leaks, B006
@@ -72,8 +72,8 @@ An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Pyt
 Real bug fixes across widely-used AI/ML repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-18-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="18 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-11-0969da?style=for-the-badge&logo=github&logoColor=white" alt="11 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-20-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="20 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-12-0969da?style=for-the-badge&logo=github&logoColor=white" alt="12 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-300k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="300k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -178,12 +178,22 @@ Test asserting on the wrong path so it could not fail, in the Maven source plugi
 <a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/mercari/pipeline/pull/119">pipeline #119</a> · <a href="https://github.com/mercari/pipeline/pull/122">#122</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/grokability.png" width="34"/><br/>
+<b>Snipe-IT · Apache Maven</b><br/><sub>PHP · Java · tooling</sub>
+</td>
+<td valign="top">
+In <b>Snipe-IT</b>, <code>--force</code> did not suppress a PHP-version prompt in <code>ldap:troubleshoot</code>, so the command hung in Docker where no one could answer it — the guard present on two neighbouring confirmations was missing on the third. In the <b>Maven help plugin</b>, a deprecated Maven 2 constant supplied the <code>LATEST</code> metaversion; replacing it with <code>null</code>, as the issue proposed, would have emptied the version and broken two-part coordinates, so the value stayed and the first tests for that method came with it.<br/>
+<a href="https://github.com/grokability/snipe-it/pull/19514">snipe-it #19514</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
 </table>
 
-<sub><b>18 PRs merged</b> · <b>11 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>20 PRs merged</b> · <b>12 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_18_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 18 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_20_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 20 merged PRs"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
 

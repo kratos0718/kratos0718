@@ -46,7 +46,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 
 ```text
 Merged PRs   22  ·  13 orgs  ·  300k+ ⭐
-Flagship     codehound (70-check AST analyzer)
+Flagship     codehound (88-check AST analyzer)
 Bug classes  async task GC, blocking I/O,
              resource leaks, mutable defaults
 Research     accepted @ IEEE ISED 2026
@@ -61,7 +61,7 @@ Stack        Python · Java · PyTorch · LLMs
 
 ### 🐕 codehound — [github.com/kratos0718/codehound](https://github.com/kratos0718/codehound)
 
-An AST-based Python static analyzer — **70 checks, zero dependencies, CI on Python 3.9–3.12.** Each check is distilled from a real bug found and fixed in a popular open-source project: fire-and-forget tasks that get garbage-collected mid-run, event-loop-blocking calls inside `async` functions, mutable default arguments, unclosed resources, and more. Several of the merged fixes below were surfaced by it. Try it on any GitHub repo or local folder at the [playground](https://kratos0718.github.io/codehound/) — no install needed.
+An AST-based Python static analyzer — **88 checks, zero dependencies, CI on Python 3.9–3.12.** Each check is distilled from a real bug found and fixed in a popular open-source project: fire-and-forget tasks that get garbage-collected mid-run, event-loop-blocking calls inside `async` functions, mutable default arguments, unclosed resources, and more. Several of the merged fixes below were surfaced by it. Try it on any GitHub repo or local folder at the [playground](https://kratos0718.github.io/codehound/) — no install needed.
 
 <a href="https://github.com/kratos0718/codehound"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View repository"/></a>
 <a href="https://kratos0718.github.io/codehound/"><img src="https://img.shields.io/badge/Try_the_playground-2dd4bf?style=flat-square&logo=vercel&logoColor=black" alt="Try the playground"/></a>

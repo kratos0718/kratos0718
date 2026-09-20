@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-21-2dd4bf?style=flat-square&labelColor=0d1117" alt="21 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-22-2dd4bf?style=flat-square&labelColor=0d1117" alt="22 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **21 PRs merged** into major AI frameworks with a combined 300k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **22 PRs merged** into major AI frameworks with a combined 300k+ stars.
 
 <table>
 <tr>
@@ -45,10 +45,10 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   21  ·  13 orgs  ·  300k+ ⭐
-Flagship     codehound (AST analyzer)
-Bug classes  async-blocking, task GC,
-             resource leaks, B006
+Merged PRs   22  ·  13 orgs  ·  300k+ ⭐
+Flagship     codehound (50-check AST analyzer)
+Bug classes  async task GC, blocking I/O,
+             resource leaks, mutable defaults
 Research     accepted @ IEEE ISED 2026
 Stack        Python · Java · PyTorch · LLMs
 ```
@@ -61,9 +61,10 @@ Stack        Python · Java · PyTorch · LLMs
 
 ### 🐕 codehound — [github.com/kratos0718/codehound](https://github.com/kratos0718/codehound)
 
-An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Python 3.9–3.12.** It detects six real bug classes: event-loop-blocking calls inside `async` functions, fire-and-forget tasks that can be garbage-collected mid-run, mutable default arguments, unclosed file handles, and deprecated event-loop APIs. Several of the merged fixes below were surfaced by it.
+An AST-based Python static analyzer — **50 checks, zero dependencies, CI on Python 3.9–3.12.** Each check is distilled from a real bug found and fixed in a popular open-source project: fire-and-forget tasks that get garbage-collected mid-run, event-loop-blocking calls inside `async` functions, mutable default arguments, unclosed resources, and more. Several of the merged fixes below were surfaced by it. Try it on any GitHub repo or local folder at the [playground](https://kratos0718.github.io/codehound/) — no install needed.
 
 <a href="https://github.com/kratos0718/codehound"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View repository"/></a>
+<a href="https://kratos0718.github.io/codehound/"><img src="https://img.shields.io/badge/Try_the_playground-2dd4bf?style=flat-square&logo=vercel&logoColor=black" alt="Try the playground"/></a>
 
 ---
 
@@ -72,7 +73,7 @@ An AST-based Python static analyzer — **~750 LOC, zero dependencies, CI on Pyt
 Real bug fixes across widely-used AI/ML repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-21-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="21 merged PRs"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-22-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="22 merged PRs"/>
   <img src="https://img.shields.io/badge/Organizations-13-0969da?style=for-the-badge&logo=github&logoColor=white" alt="13 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-300k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="300k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
@@ -171,21 +172,31 @@ Blocking <code>time.sleep</code> in async <code>wait_for_weaviate</code> — <b>
 <tr>
 <td valign="top" align="center">
 <img src="https://github.com/apache.png" width="34"/><br/>
-<b>Apache Maven · Mercari</b><br/><sub>Java · build &amp; data</sub>
+<b>Apache Maven</b><br/><sub>build tooling, Java</sub>
 </td>
 <td valign="top">
-Test asserting on the wrong path so it could not fail, in the Maven source plugin. At <b>Mercari</b>, two Avro timestamp bugs on the JDBC path — <code>timestamp-micros</code> truncated to milliseconds, and a millis-to-micros conversion that scaled the wrong way — both silently corrupting sub-second data.<br/>
-<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/mercari/pipeline/pull/119">pipeline #119</a> · <a href="https://github.com/mercari/pipeline/pull/122">#122</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+Three merges, all reviewed by @elharo. A test in the source plugin that asserted on the wrong path so it could never fail. A deprecated Maven&nbsp;2 constant in the help plugin — the issue proposed replacing it with <code>null</code>, which would have emptied the metaversion and broken two-part coordinates, so the value stayed and the first tests for that method came with it. And a hash analyzer that computed and cached a jar's SHA-1 correctly but returned the stale <code>null</code> local instead of the new value, so every first-time lookup behaved as if the file couldn't be hashed.<br/>
+<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <a href="https://github.com/apache/maven-shared-jar/pull/165">maven-shared-jar #165</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/mercari.png" width="34"/><br/>
+<b>Mercari</b><br/><sub>data pipeline, Java</sub>
+</td>
+<td valign="top">
+Two Avro timestamp bugs on the JDBC path — <code>timestamp-micros</code> truncated to milliseconds, and a millis-to-micros conversion that scaled the wrong way — both silently corrupting sub-second data.<br/>
+<a href="https://github.com/mercari/pipeline/pull/119">pipeline #119</a> · <a href="https://github.com/mercari/pipeline/pull/122">#122</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
 <td valign="top" align="center">
 <img src="https://github.com/grokability.png" width="34"/><br/>
-<b>Snipe-IT · Apache Maven</b><br/><sub>PHP · Java · tooling</sub>
+<b>Snipe-IT</b><br/><sub>PHP · asset mgmt</sub>
 </td>
 <td valign="top">
-In <b>Snipe-IT</b>, <code>--force</code> did not suppress a PHP-version prompt in <code>ldap:troubleshoot</code>, so the command hung in Docker where no one could answer it — the guard present on two neighbouring confirmations was missing on the third. In the <b>Maven help plugin</b>, a deprecated Maven 2 constant supplied the <code>LATEST</code> metaversion; replacing it with <code>null</code>, as the issue proposed, would have emptied the version and broken two-part coordinates, so the value stayed and the first tests for that method came with it.<br/>
-<a href="https://github.com/grokability/snipe-it/pull/19514">snipe-it #19514</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+<code>--force</code> did not suppress a PHP-version prompt in <code>ldap:troubleshoot</code>, so the command hung in Docker where no one could answer it — the guard present on two neighbouring confirmations was missing on the third.<br/>
+<a href="https://github.com/grokability/snipe-it/pull/19514">snipe-it #19514</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -200,10 +211,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>21 PRs merged</b> · <b>13 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>22 PRs merged</b> · <b>13 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_21_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 21 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_22_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 22 merged PRs"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
 
@@ -278,6 +289,8 @@ Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate]
 
 <img height="150" src="https://github-readme-stats.vercel.app/api?username=kratos0718&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true"/>
 <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kratos0718&layout=compact&langs_count=6&theme=github_dark&hide_border=true"/>
+<br/>
+<img height="150" src="https://github-readme-streak-stats.herokuapp.com/?user=kratos0718&theme=github-dark-blue&hide_border=true&background=0D1117"/>
 
 <br/><br/>
 

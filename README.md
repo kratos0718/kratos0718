@@ -46,9 +46,13 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 
 ```text
 Merged PRs   27  ·  16 orgs  ·  300k+ ⭐
+Domains      AI frameworks · message queues
+             databases · build tooling
+             cloud security · data pipelines
+Languages    Python · Java · PHP
 Flagship     codehound (104-check AST analyzer)
 Bug classes  async task GC, blocking I/O,
-             resource leaks, mutable defaults
+             resource leaks, shared state
 Research     accepted @ IEEE ISED 2026
 Stack        Python · Java · PyTorch · LLMs
 ```

@@ -73,7 +73,7 @@
         keyTimes="0;0.02;0.23;0.25;1" values="0;1;1;0;0"/>
     </text>
     <text x="600" y="268" opacity="0">
-      22 PRS MERGED &#183; 13 ORGANIZATIONS &#183; 300K+ STARS
+      27 PRS MERGED &#183; 16 ORGANIZATIONS &#183; 300K+ STARS
       <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
         keyTimes="0;0.25;0.27;0.48;0.50;1" values="0;0;1;1;0;0"/>
     </text>

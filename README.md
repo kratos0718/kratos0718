@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-22-2dd4bf?style=flat-square&labelColor=0d1117" alt="22 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-27-2dd4bf?style=flat-square&labelColor=0d1117" alt="27 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **22 PRs merged** into major AI frameworks with a combined 300k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **27 PRs merged** into major AI and Python infrastructure projects with a combined 300k+ stars.
 
 <table>
 <tr>
@@ -45,8 +45,8 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   22  ·  13 orgs  ·  300k+ ⭐
-Flagship     codehound (100-check AST analyzer)
+Merged PRs   27  ·  16 orgs  ·  300k+ ⭐
+Flagship     codehound (104-check AST analyzer)
 Bug classes  async task GC, blocking I/O,
              resource leaks, mutable defaults
 Research     accepted @ IEEE ISED 2026
@@ -61,7 +61,7 @@ Stack        Python · Java · PyTorch · LLMs
 
 ### 🐕 codehound — [github.com/kratos0718/codehound](https://github.com/kratos0718/codehound)
 
-An AST-based Python static analyzer — **100 checks, zero dependencies, CI on Python 3.9–3.12.** Each check is distilled from a real bug found and fixed in a popular open-source project: fire-and-forget tasks that get garbage-collected mid-run, event-loop-blocking calls inside `async` functions, mutable default arguments, unclosed resources, and more. Several of the merged fixes below were surfaced by it. Try it on any GitHub repo or local folder at the [playground](https://kratos0718.github.io/codehound/) — no install needed.
+An AST-based Python static analyzer — **104 checks, zero dependencies, CI on Python 3.9–3.12.** Each check is distilled from a real bug found and fixed in a popular open-source project: fire-and-forget tasks that get garbage-collected mid-run, event-loop-blocking calls inside `async` functions, mutable default arguments, unclosed resources, and more. Several of the merged fixes below were surfaced by it. Try it on any GitHub repo or local folder at the [playground](https://kratos0718.github.io/codehound/) — no install needed.
 
 <a href="https://github.com/kratos0718/codehound"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View repository"/></a>
 <a href="https://kratos0718.github.io/codehound/"><img src="https://img.shields.io/badge/Try_the_playground-2dd4bf?style=flat-square&logo=vercel&logoColor=black" alt="Try the playground"/></a>
@@ -70,11 +70,11 @@ An AST-based Python static analyzer — **100 checks, zero dependencies, CI on P
 
 ### 🔧 Open-source contributions
 
-Real bug fixes across widely-used AI/ML repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
+Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-22-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="22 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-13-0969da?style=for-the-badge&logo=github&logoColor=white" alt="13 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-27-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="27 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-16-0969da?style=for-the-badge&logo=github&logoColor=white" alt="16 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-300k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="300k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -175,8 +175,38 @@ Blocking <code>time.sleep</code> in async <code>wait_for_weaviate</code> — <b>
 <b>Apache Maven</b><br/><sub>build tooling, Java</sub>
 </td>
 <td valign="top">
-Three merges, all reviewed by @elharo. A test in the source plugin that asserted on the wrong path so it could never fail. A deprecated Maven&nbsp;2 constant in the help plugin — the issue proposed replacing it with <code>null</code>, which would have emptied the metaversion and broken two-part coordinates, so the value stayed and the first tests for that method came with it. And a hash analyzer that computed and cached a jar's SHA-1 correctly but returned the stale <code>null</code> local instead of the new value, so every first-time lookup behaved as if the file couldn't be hashed.<br/>
-<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <a href="https://github.com/apache/maven-shared-jar/pull/165">maven-shared-jar #165</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+Four merges, all reviewed by @elharo. A test in the source plugin that asserted on the wrong path so it could never fail. A deprecated Maven&nbsp;2 constant in the help plugin — the issue proposed replacing it with <code>null</code>, which would have emptied the metaversion and broken two-part coordinates, so the value stayed and the first tests for that method came with it. And a hash analyzer that computed and cached a jar's SHA-1 correctly but returned the stale <code>null</code> local instead of the new value, so every first-time lookup behaved as if the file couldn't be hashed. And the source plugin's <code>aggregate</code> goal, which silently did nothing on a non-POM project, now fails with a message naming the project and its packaging.<br/>
+<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <a href="https://github.com/apache/maven-shared-jar/pull/165">maven-shared-jar #165</a> · <a href="https://github.com/apache/maven-source-plugin/pull/320">maven-source-plugin #320</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/celery.png" width="34"/><br/>
+<b>Celery · kombu</b><br/><sub>messaging for Celery</sub>
+</td>
+<td valign="top">
+The SQS transport cached queue URLs, boto3 clients and its no-ack set at class level, so every <code>Connection</code> in a process shared them. Two connections to different AWS accounts that both used a queue called <code>orders</code> ended up sending to and polling whichever URL was cached first. Verified against a local SQS emulator with an integration test.<br/>
+<a href="https://github.com/celery/kombu/pull/2676">kombu #2676</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/pydantic.png" width="34"/><br/>
+<b>pydantic · black</b><br/><sub>29k⭐ · 42k⭐</sub>
+</td>
+<td valign="top">
+A bare <code>isinstance(...)</code> statement in pydantic's decorator collection that checked the wrong variable and discarded its result, turned into a real invariant. And two grammar-file handles in black's <code>blib2to3</code> converter that were opened and never closed — <b>found by codehound</b>.<br/>
+<a href="https://github.com/pydantic/pydantic/pull/13858">pydantic #13858</a> · <a href="https://github.com/psf/black/pull/5432">black #5432</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/redis.png" width="34"/><br/>
+<b>redis-py</b><br/><sub>14k⭐</sub>
+</td>
+<td valign="top">
+<code>utils.pipeline()</code> ran <code>execute()</code> after a bare <code>yield</code>, so an exception inside the <code>with</code> block skipped it. After a <code>watch()</code> that leaked a real pooled connection on every failure.<br/>
+<a href="https://github.com/redis/redis-py/pull/4345">redis-py #4345</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -211,16 +241,20 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>22 PRs merged</b> · <b>13 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>27 PRs merged</b> · <b>16 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_22_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 22 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_27_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 27 merged PRs"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
 
-**Currently under review** — beyond Python/AI, into new languages and domains:
+**Currently under review:**
 
 <p>
+  <a href="https://github.com/aio-libs/aiokafka/pull/1190"><img src="https://img.shields.io/badge/aiokafka-consumer_liveness_check-3572A5?style=flat-square&logo=apachekafka&logoColor=white" alt="aiokafka"/></a>
+  <a href="https://github.com/MagicStack/asyncpg/pull/1373"><img src="https://img.shields.io/badge/asyncpg-query_logger_leak-336791?style=flat-square&logo=postgresql&logoColor=white" alt="asyncpg"/></a>
+  <a href="https://github.com/joblib/loky/pull/668"><img src="https://img.shields.io/badge/joblib/loky-masked_EMFILE-F7931E?style=flat-square" alt="loky"/></a>
+  <a href="https://github.com/celery/kombu/pulls?q=is%3Apr+author%3Akratos0718+is%3Aopen"><img src="https://img.shields.io/badge/kombu-Kafka·ZooKeeper·Azure_fixes-37814A?style=flat-square" alt="kombu"/></a>
   <a href="https://github.com/lextudio/pysnmp/pull/248"><img src="https://img.shields.io/badge/pysnmp-SNMP_index_decoding-3572A5?style=flat-square&logo=python&logoColor=white" alt="pysnmp"/></a>
   <a href="https://github.com/vllm-project/vllm/pull/45249"><img src="https://img.shields.io/badge/vLLM-87k⭐-000000?style=flat-square" alt="vllm"/></a>
   <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-60k⭐-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>

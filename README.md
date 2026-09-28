@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-27-2dd4bf?style=flat-square&labelColor=0d1117" alt="27 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-29-2dd4bf?style=flat-square&labelColor=0d1117" alt="29 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **27 PRs merged** into major AI and Python infrastructure projects with a combined 300k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **29 PRs merged** into AI, Python infrastructure, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -33,6 +33,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 
 **Currently**
 
+- 🤖 built **[AgentDesk](https://github.com/kratos0718/agentdesk)** — multi-agent assistant with tool calling, RAG, guardrails and evals
 - 🔭 built **DocGuard-VLM** — QLoRA fine-tuned Qwen2-VL for document extraction + forgery detection
 - 🐕 building **codehound** — a static analyzer that finds real bugs in AI codebases
 - 📄 co-author paper **accepted at IEEE ISED 2026**, NIT Warangal
@@ -45,10 +46,10 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   27  ·  16 orgs  ·  300k+ ⭐
-Domains      AI frameworks · message queues
+Merged PRs   29  ·  18 orgs  ·  400k+ ⭐
+Domains      AI frameworks · message queues · IoT
              databases · build tooling
-             cloud security · data pipelines
+             network security · data pipelines
 Languages    Python · Java · PHP
 Flagship     codehound (104-check AST analyzer)
 Bug classes  async task GC, blocking I/O,
@@ -77,9 +78,9 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-27-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="27 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-16-0969da?style=for-the-badge&logo=github&logoColor=white" alt="16 organizations"/>
-  <img src="https://img.shields.io/badge/Combined_stars-300k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="300k+ combined stars"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-29-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="29 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-18-0969da?style=for-the-badge&logo=github&logoColor=white" alt="18 organizations"/>
+  <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
 
@@ -205,6 +206,16 @@ A bare <code>isinstance(...)</code> statement in pydantic's decorator collection
 </tr>
 <tr>
 <td valign="top" align="center">
+<img src="https://github.com/secdev.png" width="34"/><br/>
+<b>scapy · pymodbus</b><br/><sub>12.6k⭐ · 2.8k⭐</sub>
+</td>
+<td valign="top">
+In <b>pymodbus</b>, every device identity shared one class-level dict, so creating any identity changed what a running Modbus server reported. The maintainer merged it within the hour: <i>"one that have been on my list for a long time"</i>. In <b>scapy</b>, a missing <code>tcpreplay</code> surfaced as an <code>UnboundLocalError</code> instead of scapy's own "is it installed?" message.<br/>
+<a href="https://github.com/pymodbus-dev/pymodbus/pull/3036">pymodbus #3036</a> · <a href="https://github.com/secdev/scapy/pull/5204">scapy #5204</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
 <img src="https://github.com/redis.png" width="34"/><br/>
 <b>redis-py</b><br/><sub>14k⭐</sub>
 </td>
@@ -245,16 +256,19 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>27 PRs merged</b> · <b>16 organizations</b> · <b>300k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>29 PRs merged</b> · <b>18 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_27_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 27 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_29_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 29 merged PRs"/></a>
+  <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
 
 **Currently under review:**
 
 <p>
+  <a href="https://github.com/svinota/pyroute2/pull/1492"><img src="https://img.shields.io/badge/pyroute2-plan9_session_isolation-3572A5?style=flat-square&logo=python&logoColor=white" alt="pyroute2"/></a>
+  <a href="https://github.com/valkey-io/valkey-py/pull/340"><img src="https://img.shields.io/badge/valkey--py-pipeline_connection_leak-DC382D?style=flat-square" alt="valkey-py"/></a>
   <a href="https://github.com/aio-libs/aiokafka/pull/1190"><img src="https://img.shields.io/badge/aiokafka-consumer_liveness_check-3572A5?style=flat-square&logo=apachekafka&logoColor=white" alt="aiokafka"/></a>
   <a href="https://github.com/MagicStack/asyncpg/pull/1373"><img src="https://img.shields.io/badge/asyncpg-query_logger_leak-336791?style=flat-square&logo=postgresql&logoColor=white" alt="asyncpg"/></a>
   <a href="https://github.com/joblib/loky/pull/668"><img src="https://img.shields.io/badge/joblib/loky-masked_EMFILE-F7931E?style=flat-square" alt="loky"/></a>

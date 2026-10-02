@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-29-2dd4bf?style=flat-square&labelColor=0d1117" alt="29 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-40-2dd4bf?style=flat-square&labelColor=0d1117" alt="40 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **29 PRs merged** into AI, Python infrastructure, networking and IoT projects with a combined 400k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **40 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -46,8 +46,9 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   29  ·  18 orgs  ·  400k+ ⭐
+Merged PRs   40  ·  21 orgs  ·  400k+ ⭐
 Domains      AI frameworks · message queues · IoT
+             test doubles (fake fs, fake Redis)
              databases · build tooling
              network security · data pipelines
 Languages    Python · Java · PHP
@@ -78,8 +79,8 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-29-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="29 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-18-0969da?style=for-the-badge&logo=github&logoColor=white" alt="18 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-40-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="40 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-21-0969da?style=for-the-badge&logo=github&logoColor=white" alt="21 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -187,11 +188,41 @@ Four merges, all reviewed by @elharo. A test in the source plugin that asserted 
 <tr>
 <td valign="top" align="center">
 <img src="https://github.com/celery.png" width="34"/><br/>
-<b>Celery · kombu</b><br/><sub>messaging for Celery</sub>
+<b>Celery · kombu · billiard</b><br/><sub>messaging and worker pool</sub>
 </td>
 <td valign="top">
-The SQS transport cached queue URLs, boto3 clients and its no-ack set at class level, so every <code>Connection</code> in a process shared them. Two connections to different AWS accounts that both used a queue called <code>orders</code> ended up sending to and polling whichever URL was cached first. Verified against a local SQS emulator with an integration test.<br/>
-<a href="https://github.com/celery/kombu/pull/2676">kombu #2676</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+Eight merges, all reviewed by @auvipy. In kombu, the SQS, Azure Storage Queues, ZooKeeper and Kafka transports kept per-connection state at class level, so connections to different accounts or vhosts shared queue caches and unacked messages; the filesystem transport hid a failed <code>open()</code> behind an <code>UnboundLocalError</code>. In billiard, Celery's process pool, a closed <code>Queue</code> lost items under <code>python -O</code>, closing a live <code>Process</code> left the child unreapable, and <code>maxtasksperchild=0</code> made the pool respawn workers forever. Each fix came with a regression test, and I was later asked to review another contributor's billiard PR.<br/>
+<a href="https://github.com/celery/kombu/pull/2676">kombu #2676</a> · <a href="https://github.com/celery/kombu/pull/2679">#2679</a> · <a href="https://github.com/celery/kombu/pull/2680">#2680</a> · <a href="https://github.com/celery/kombu/pull/2681">#2681</a> · <a href="https://github.com/celery/kombu/pull/2683">#2683</a> · <a href="https://github.com/celery/billiard/pull/465">billiard #465</a> · <a href="https://github.com/celery/billiard/pull/466">#466</a> · <a href="https://github.com/celery/billiard/pull/467">#467</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/MagicStack.png" width="34"/><br/>
+<b>asyncpg</b><br/><sub>PostgreSQL driver · 8k⭐</sub>
+</td>
+<td valign="top">
+<code>Connection.query_logger()</code> removed its logger only when the block exited cleanly, so an exception inside it left the logger attached and logging every later query on that connection.<br/>
+<a href="https://github.com/MagicStack/asyncpg/pull/1373">asyncpg #1373</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/cunla.png" width="34"/><br/>
+<b>fakeredis</b><br/><sub>in-memory Redis for tests</sub>
+</td>
+<td valign="top">
+Found by running the same commands against a real Redis server and the fake one. <code>BITOP</code> cut its result to the shortest operand and crashed on a missing first key, and every search around a member (<code>GEOSEARCH ... FROMMEMBER</code>, <code>GEORADIUSBYMEMBER</code>) crashed with a Python <code>TypeError</code> instead of Redis's error.<br/>
+<a href="https://github.com/cunla/fakeredis-py/pull/593">fakeredis #593</a> · <a href="https://github.com/cunla/fakeredis-py/pull/594">#594</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/joblib.png" width="34"/><br/>
+<b>joblib · loky</b><br/><sub>process executor</sub>
+</td>
+<td valign="top">
+When <code>os.pipe()</code> failed in <code>Popen._launch</code>, for example when the parent ran out of file descriptors, the cleanup raised <code>UnboundLocalError</code> and hid the real <code>OSError</code>. Reproduced without mocks by lowering <code>RLIMIT_NOFILE</code>.<br/>
+<a href="https://github.com/joblib/loky/pull/668">loky #668</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -256,10 +287,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>29 PRs merged</b> · <b>18 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>40 PRs merged</b> · <b>21 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_29_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 29 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_40_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 40 merged PRs"/></a>
   <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>

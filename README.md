@@ -18,14 +18,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-40-2dd4bf?style=flat-square&labelColor=0d1117" alt="40 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-42-2dd4bf?style=flat-square&labelColor=0d1117" alt="42 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **40 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **42 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -46,7 +46,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   40  ·  21 orgs  ·  400k+ ⭐
+Merged PRs   42  ·  23 orgs  ·  400k+ ⭐
 Domains      AI frameworks · message queues · IoT
              test doubles (fake fs, fake Redis)
              databases · build tooling
@@ -79,8 +79,8 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-40-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="40 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-21-0969da?style=for-the-badge&logo=github&logoColor=white" alt="21 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-42-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="42 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-23-0969da?style=for-the-badge&logo=github&logoColor=white" alt="23 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -113,6 +113,16 @@ Blocking <code>time.sleep</code> (up to 30s) freezing the async event loop in th
 <td valign="top">
 Shared mutable-default <code>deque</code> in <code>process_tool_calls</code> leaking one run's result into the next — <b>found by codehound</b>. Merged same day.<br/>
 <a href="https://github.com/pydantic/pydantic-ai/pull/6189">#6189</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/ogx-ai.png" width="34"/><br/>
+<b>OGX</b><br/><sub>Open GenAI Stack · 8k⭐</sub>
+</td>
+<td valign="top">
+The vector store's expired-batch cleanup ran as a bare <code>asyncio.create_task</code> that <code>shutdown()</code> never saw, so shutdown returned mid-cleanup and process exit cancelled it silently, leaving half-deleted batches until the next daily run. Tracked and awaited on shutdown, with tests that fail against a cancel-only fix.<br/>
+<a href="https://github.com/ogx-ai/ogx/pull/6226">ogx #6226</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -217,6 +227,16 @@ Found by running the same commands against a real Redis server and the fake one.
 </tr>
 <tr>
 <td valign="top" align="center">
+<img src="https://github.com/svinota.png" width="34"/><br/>
+<b>pyroute2</b><br/><sub>Linux netlink · 9P</sub>
+</td>
+<td valign="top">
+The 9P server kept its fid table and inode map at class level, so two servers in one process shared them: one client read another server's file through its own fid. Moved the state per session and per filesystem, with a test that runs two servers side by side.<br/>
+<a href="https://github.com/svinota/pyroute2/pull/1492">pyroute2 #1492</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
 <img src="https://github.com/joblib.png" width="34"/><br/>
 <b>joblib · loky</b><br/><sub>process executor</sub>
 </td>
@@ -287,10 +307,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>40 PRs merged</b> · <b>21 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>42 PRs merged</b> · <b>23 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_40_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 40 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_42_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 42 merged PRs"/></a>
   <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
@@ -298,18 +318,21 @@ Two memories whose opening lines matched derived the same filename, and the seco
 **Currently under review:**
 
 <p>
-  <a href="https://github.com/svinota/pyroute2/pull/1492"><img src="https://img.shields.io/badge/pyroute2-plan9_session_isolation-3572A5?style=flat-square&logo=python&logoColor=white" alt="pyroute2"/></a>
+  <a href="https://github.com/run-llama/llama_index/pulls?q=is%3Apr+author%3Akratos0718+is%3Aopen"><img src="https://img.shields.io/badge/LlamaIndex-session_leak·shared_state-8250df?style=flat-square" alt="llama_index"/></a>
+  <a href="https://github.com/BerriAI/litellm/pull/41582"><img src="https://img.shields.io/badge/litellm-Router_memory_leak-1a7f37?style=flat-square" alt="litellm"/></a>
+  <a href="https://github.com/shap/shap/pull/5184"><img src="https://img.shields.io/badge/SHAP-style_context_restore-ff0d57?style=flat-square" alt="shap"/></a>
+  <a href="https://github.com/pyg-team/pytorch_geometric/pull/10832"><img src="https://img.shields.io/badge/PyG-per--instance_explainer_state-3C2179?style=flat-square&logo=pytorch&logoColor=white" alt="pytorch_geometric"/></a>
+  <a href="https://github.com/Lightning-AI/torchmetrics/pull/3520"><img src="https://img.shields.io/badge/torchmetrics-ranking_loss_ties-792EE5?style=flat-square&logo=lightning&logoColor=white" alt="torchmetrics"/></a>
+  <a href="https://github.com/meta-pytorch/torchtune/pull/2964"><img src="https://img.shields.io/badge/torchtune-rank--zero_logging-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="torchtune"/></a>
+  <a href="https://github.com/pytest-dev/pyfakefs/pulls?q=is%3Apr+author%3Akratos0718+is%3Aopen"><img src="https://img.shields.io/badge/pyfakefs-rename·truncate_semantics-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pyfakefs"/></a>
+  <a href="https://github.com/paramiko/paramiko/pull/2694"><img src="https://img.shields.io/badge/paramiko-socket_leak-3572A5?style=flat-square&logo=python&logoColor=white" alt="paramiko"/></a>
+  <a href="https://github.com/arrow-py/arrow/pull/1361"><img src="https://img.shields.io/badge/arrow-ReDoS_in_timestamp_parsing-cf222e?style=flat-square" alt="arrow"/></a>
+  <a href="https://github.com/pygments/pygments/pull/3324"><img src="https://img.shields.io/badge/pygments-regex_backtracking-cf222e?style=flat-square" alt="pygments"/></a>
   <a href="https://github.com/valkey-io/valkey-py/pull/340"><img src="https://img.shields.io/badge/valkey--py-pipeline_connection_leak-DC382D?style=flat-square" alt="valkey-py"/></a>
-  <a href="https://github.com/aio-libs/aiokafka/pull/1190"><img src="https://img.shields.io/badge/aiokafka-consumer_liveness_check-3572A5?style=flat-square&logo=apachekafka&logoColor=white" alt="aiokafka"/></a>
-  <a href="https://github.com/MagicStack/asyncpg/pull/1373"><img src="https://img.shields.io/badge/asyncpg-query_logger_leak-336791?style=flat-square&logo=postgresql&logoColor=white" alt="asyncpg"/></a>
-  <a href="https://github.com/joblib/loky/pull/668"><img src="https://img.shields.io/badge/joblib/loky-masked_EMFILE-F7931E?style=flat-square" alt="loky"/></a>
-  <a href="https://github.com/celery/kombu/pulls?q=is%3Apr+author%3Akratos0718+is%3Aopen"><img src="https://img.shields.io/badge/kombu-Kafka·ZooKeeper·Azure_fixes-37814A?style=flat-square" alt="kombu"/></a>
-  <a href="https://github.com/lextudio/pysnmp/pull/248"><img src="https://img.shields.io/badge/pysnmp-SNMP_index_decoding-3572A5?style=flat-square&logo=python&logoColor=white" alt="pysnmp"/></a>
-  <a href="https://github.com/vllm-project/vllm/pull/45249"><img src="https://img.shields.io/badge/vLLM-87k⭐-000000?style=flat-square" alt="vllm"/></a>
-  <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-60k⭐-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>
-  <a href="https://github.com/BerriAI/litellm/pull/34711"><img src="https://img.shields.io/badge/litellm-55k⭐-1a7f37?style=flat-square" alt="litellm"/></a>
-  <a href="https://github.com/dask/dask/pull/12482"><img src="https://img.shields.io/badge/Dask-13k⭐-FDA061?style=flat-square&logo=dask&logoColor=black" alt="dask"/></a>
-  <a href="https://github.com/agentscope-ai/agentscope-java/pull/2543"><img src="https://img.shields.io/badge/AgentScope_Java-4.8k⭐-b07219?style=flat-square&logo=openjdk&logoColor=white" alt="agentscope-java"/></a>
+  <a href="https://github.com/aio-libs/aiokafka/pull/1190"><img src="https://img.shields.io/badge/aiokafka-fetch_context_leak-3572A5?style=flat-square&logo=apachekafka&logoColor=white" alt="aiokafka"/></a>
+  <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-task_GC-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>
+  <a href="https://github.com/dask/dask/pull/12482"><img src="https://img.shields.io/badge/Dask-extension_dtype-FDA061?style=flat-square" alt="dask"/></a>
+  <a href="https://github.com/agentscope-ai/agentscope-java/pull/2543"><img src="https://img.shields.io/badge/AgentScope_Java-shared_SkillBox-b07219?style=flat-square&logo=openjdk&logoColor=white" alt="agentscope-java"/></a>
 </p>
 
 ---

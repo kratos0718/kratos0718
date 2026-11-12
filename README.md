@@ -7,6 +7,10 @@
 </p>
 
 <p align="center">
+  🟢 <b>Open to AI engineer roles</b> — internships now, full-time from 2027 · remote or on-site · <a href="mailto:abhinaaavvv07187@gmail.com">get in touch</a>
+</p>
+
+<p align="center">
   <a href="https://www.linkedin.com/in/abhinav0702/">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula">ResearchGate</a> &nbsp;·&nbsp;
   <a href="https://www.abhinavbuilds.online/">Portfolio</a> &nbsp;·&nbsp;

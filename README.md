@@ -22,14 +22,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-46-2dd4bf?style=flat-square&labelColor=0d1117" alt="46 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-47-2dd4bf?style=flat-square&labelColor=0d1117" alt="47 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **46 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **47 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -50,7 +50,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   46  ·  26 orgs  ·  400k+ ⭐
+Merged PRs   47  ·  27 orgs  ·  400k+ ⭐
 Domains      AI frameworks · message queues · IoT
              test doubles (fake fs, fake Redis)
              databases · build tooling
@@ -83,8 +83,8 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-46-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="46 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-26-0969da?style=for-the-badge&logo=github&logoColor=white" alt="26 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-47-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="47 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-27-0969da?style=for-the-badge&logo=github&logoColor=white" alt="27 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -341,10 +341,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>46 PRs merged</b> · <b>26 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>47 PRs merged</b> · <b>27 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_46_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 46 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_47_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 47 merged PRs"/></a>
   <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>

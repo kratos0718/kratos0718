@@ -22,14 +22,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-48-2dd4bf?style=flat-square&labelColor=0d1117" alt="48 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-50-2dd4bf?style=flat-square&labelColor=0d1117" alt="50 merged PRs"/></a>
   &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **48 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **50 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -50,7 +50,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Merged PRs   48  ·  28 orgs  ·  400k+ ⭐
+Merged PRs   50  ·  30 orgs  ·  400k+ ⭐
 Domains      AI frameworks · message queues · IoT
              test doubles (fake fs, fake Redis)
              databases · build tooling
@@ -83,8 +83,8 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Merged_PRs-48-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="48 merged PRs"/>
-  <img src="https://img.shields.io/badge/Organizations-28-0969da?style=for-the-badge&logo=github&logoColor=white" alt="28 organizations"/>
+  <img src="https://img.shields.io/badge/Merged_PRs-50-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="50 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-30-0969da?style=for-the-badge&logo=github&logoColor=white" alt="30 organizations"/>
   <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
   <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
 </p>
@@ -107,6 +107,26 @@ Real bug fixes across widely-used AI/ML and Python infrastructure repositories. 
 <td valign="top">
 <code>jax.random.choice</code> dropped every non-sampled dimension when asked for zero samples, so <code>choice(key, a, shape=(0,), axis=1)</code> on a 3×4 array returned <code>(0,)</code> where NumPy returns <code>(3, 0)</code>. The output shape is now computed once for both paths, and the existing NumPy-comparison test covers empty shapes.<br/>
 <a href="https://github.com/jax-ml/jax/pull/42430">jax #42430</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/microsoft.png" width="34"/><br/>
+<b>Microsoft</b><br/><sub>semantic-link-labs</sub>
+</td>
+<td valign="top">
+<code>get_published_spark_compute</code> and <code>get_staging_spark_compute</code> handed the raw HTTP response to code that expected the parsed JSON body, so both crashed on every call. They now read the JSON body, with a test covering both functions.<br/>
+<a href="https://github.com/microsoft/semantic-link-labs/pull/1368">semantic-link-labs #1368</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/galaxyproject.png" width="34"/><br/>
+<b>Galaxy</b><br/><sub>1.9k⭐</sub>
+</td>
+<td valign="top">
+Every workflow downloaded in format2 carried a top-level <code>version</code> key that the format2 schema forbids, so strict validation rejected all of them. The format2 export now leaves it out, with an API test asserting it; backported to the 26.0 release.<br/>
+<a href="https://github.com/galaxyproject/galaxy/pull/24901">galaxy #24901</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -351,10 +371,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 </tr>
 </table>
 
-<sub><b>48 PRs merged</b> · <b>28 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+<sub><b>50 PRs merged</b> · <b>30 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
 
 <p>
-  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_48_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 48 merged PRs"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_50_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 50 merged PRs"/></a>
   <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
   <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
 </p>
@@ -369,7 +389,6 @@ Two memories whose opening lines matched derived the same filename, and the seco
   <a href="https://github.com/Lightning-AI/torchmetrics/pull/3520"><img src="https://img.shields.io/badge/torchmetrics-ranking_loss_ties-792EE5?style=flat-square&logo=lightning&logoColor=white" alt="torchmetrics"/></a>
   <a href="https://github.com/meta-pytorch/torchtune/pull/2964"><img src="https://img.shields.io/badge/torchtune-rank--zero_logging-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="torchtune"/></a>
   <a href="https://github.com/jax-ml/jax/pull/42553"><img src="https://img.shields.io/badge/JAX-zero--size_linalg-4285F4?style=flat-square&logo=google&logoColor=white" alt="JAX"/></a>
-  <a href="https://github.com/microsoft/semantic-link-labs/pull/1368"><img src="https://img.shields.io/badge/Microsoft_semantic--link--labs-Spark_compute_crash-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="semantic-link-labs"/></a>
   <a href="https://github.com/apache/maven-shared-jar/pull/166"><img src="https://img.shields.io/badge/Apache_Maven-approved-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Apache Maven"/></a>
   <a href="https://github.com/paramiko/paramiko/pull/2694"><img src="https://img.shields.io/badge/paramiko-socket_leak-3572A5?style=flat-square&logo=python&logoColor=white" alt="paramiko"/></a>
   <a href="https://github.com/arrow-py/arrow/pull/1361"><img src="https://img.shields.io/badge/arrow-ReDoS_in_timestamp_parsing-cf222e?style=flat-square" alt="arrow"/></a>

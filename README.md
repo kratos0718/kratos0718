@@ -414,8 +414,10 @@ Two memories whose opening lines matched derived the same filename, and the seco
 
 ### 📄 Research
 
-Co-authored with Dr. Chandrakanta Mahanty (GITAM). *(Full list on [ResearchGate](https://www.researchgate.net/profile/Abhinav-Tarigoppula))*
+Papers with Dr. Chandrakanta Mahanty (GITAM) and solo work. *(Full list on [ResearchGate](https://www.researchgate.net/profile/Abhinav-Tarigoppula))*
 
+- **Async Landmines in the AI Stack: An AST-Based Empirical Study of Concurrency and Resource-Management Defects in Popular Python AI/ML Frameworks** (sole author)
+  <br/><a href="https://doi.org/10.5281/zenodo.24367554"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24367554.svg" alt="DOI 10.5281/zenodo.24367554"/></a> Preprint · 1,377 defects across 29 frameworks; maintainers confirmed 11 of 12 reviewed fixes
 - **Machine Learning-Based Student Performance Prediction: A Comparative Study Using Ensemble Methods and Explainable AI**
   <br/><img src="https://img.shields.io/badge/accepted-1a7f37?style=flat-square" alt="accepted"/> 14th International Conference on Intelligent Systems and Embedded Design (**ISED 2026**), NIT Warangal · Publisher: **IEEE**
 - **From Compression Ratios to Wall-Clock Gains: A Systems-Level Review of Lightweight Deep Learning Deployment on Edge Hardware**

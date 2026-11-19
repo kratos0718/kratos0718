@@ -13,6 +13,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/abhinav0702/">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula">ResearchGate</a> &nbsp;·&nbsp;
+  <a href="https://scholar.google.com/citations?user=2LcRmRcAAAAJ">Google Scholar</a> &nbsp;·&nbsp;
   <a href="https://www.abhinavbuilds.online/">Portfolio</a> &nbsp;·&nbsp;
   <a href="mailto:abhinaaavvv07187@gmail.com">Email</a>
 </p>
@@ -431,7 +432,7 @@ Papers with Dr. Chandrakanta Mahanty (GITAM) and solo work. *(Full list on [Rese
 - **Behavior-Driven Adaptive Learning Agents for Personalized Education** — *under review, IEEE*
 - **HAPS: Hybrid AI Proctoring (dual-stream CNNs + YOLO)** — *preprint*
 
-<a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/View_full_publication_list-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="View full publication list"/></a>
+<a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/View_full_publication_list-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="View full publication list"/></a> <a href="https://scholar.google.com/citations?user=2LcRmRcAAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"/></a>
 
 ---
 

@@ -23,12 +23,14 @@
   &nbsp;
   <a href="https://www.researchgate.net/profile/Abhinav-Tarigoppula"><img src="https://img.shields.io/badge/IEEE_ISED_2026-accepted-1f6feb?style=flat-square&labelColor=0d1117" alt="IEEE ISED 2026 accepted"/></a>
   &nbsp;
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/merged_PRs-53-2dd4bf?style=flat-square&labelColor=0d1117" alt="53 merged PRs"/></a>
+  &nbsp;
   <a href="https://github.com/kratos0718?tab=achievements"><img src="https://img.shields.io/badge/GitHub_achievements-6-a371f7?style=flat-square&labelColor=0d1117" alt="6 GitHub achievements"/></a>
 </p>
 
 ---
 
-I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), and an open-source contributor to JAX (Google), pydantic, Black and asyncpg.
+I build tools that make AI/ML systems more reliable. Most AI demos are slick; most AI in production is messy — I like working in that gap, close enough to the real problem to build something that doesn't fall apart outside a notebook. Author of [codehound](https://github.com/kratos0718/codehound), **53 PRs merged** into AI, Python infrastructure, databases, networking and IoT projects with a combined 400k+ stars.
 
 <table>
 <tr>
@@ -49,7 +51,7 @@ I build tools that make AI/ML systems more reliable. Most AI demos are slick; mo
 **At a glance**
 
 ```text
-Open source  JAX (Google) · pydantic · Black · asyncpg
+Merged PRs   53  ·  32 orgs  ·  400k+ ⭐
 Domains      AI frameworks · message queues · IoT
              test doubles (fake fs, fake Redis)
              databases · build tooling
@@ -79,7 +81,14 @@ An AST-based Python static analyzer — **104 checks, zero dependencies, CI on P
 
 ### 🔧 Open-source contributions
 
-Open-source contributor to **JAX (Google)**, **pydantic**, **Black** and **asyncpg**. A few fixes I can walk through line by line:
+Real bug fixes across widely-used AI/ML and Python infrastructure repositories. One change shipped in a HuggingFace production release; one came from a founder's invitation to contribute (Future AGI).
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Merged_PRs-53-1a7f37?style=for-the-badge&logo=git&logoColor=white" alt="53 merged PRs"/>
+  <img src="https://img.shields.io/badge/Organizations-32-0969da?style=for-the-badge&logo=github&logoColor=white" alt="32 organizations"/>
+  <img src="https://img.shields.io/badge/Combined_stars-400k+-e3b341?style=for-the-badge&logo=starship&logoColor=white" alt="400k+ combined stars"/>
+  <img src="https://img.shields.io/badge/Shipped_in-huggingface__hub_v1.17.0-ffce3a?style=for-the-badge&logo=huggingface&logoColor=black" alt="shipped in huggingface_hub v1.17.0"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/async_event--loop_blocking-8250df?style=flat-square" alt=""/>
@@ -102,6 +111,88 @@ Open-source contributor to **JAX (Google)**, **pydantic**, **Black** and **async
 </td>
 </tr>
 <tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/GoogleCloudPlatform.png" width="34"/><br/>
+<b>Google Cloud</b><br/><sub>data-validator</sub>
+</td>
+<td valign="top">
+Spanner schema validation reported every column as nullable, because Spanner's table metadata carries no nullability, so NOT NULL mismatches went unnoticed. The schema now reads NOT NULL columns from <code>INFORMATION_SCHEMA</code>, matching table names case-insensitively, and a skipped system test is enabled.<br/>
+<a href="https://github.com/GoogleCloudPlatform/professional-services-data-validator/pull/1896">data-validator #1896</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/microsoft.png" width="34"/><br/>
+<b>Microsoft</b><br/><sub>semantic-link-labs</sub>
+</td>
+<td valign="top">
+<code>get_published_spark_compute</code> and <code>get_staging_spark_compute</code> handed the raw HTTP response to code that expected the parsed JSON body, so both crashed on every call. They now read the JSON body, with a test covering both functions.<br/>
+<a href="https://github.com/microsoft/semantic-link-labs/pull/1368">semantic-link-labs #1368</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/galaxyproject.png" width="34"/><br/>
+<b>Galaxy</b><br/><sub>1.9k⭐</sub>
+</td>
+<td valign="top">
+Every workflow downloaded in format2 carried a top-level <code>version</code> key that the format2 schema forbids, so strict validation rejected all of them. The format2 export now leaves it out, with an API test asserting it; backported to the 26.0 release.<br/>
+<a href="https://github.com/galaxyproject/galaxy/pull/24901">galaxy #24901</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/><br/>
+Also named each GCard selection checkbox after its card so screen readers announce which item is being selected.<br/>
+<a href="https://github.com/galaxyproject/galaxy/pull/24940">galaxy #24940</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/amd.png" width="34"/><br/>
+<b>AMD GAIA</b><br/><sub>AMD · 1.6k⭐</sub>
+</td>
+<td valign="top">
+Six places in the docs still said nothing leaves the PC, but a cloud model receives the conversation and the web-search tools send queries out even with a local model. They now say local is the default and name what goes off the machine.<br/>
+<a href="https://github.com/amd/gaia/pull/7544">gaia #7544</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/TagStudioDev.png" width="34"/><br/>
+<b>TagStudio</b><br/><sub>7.3k⭐</sub>
+</td>
+<td valign="top">
+Text previews garbled emoji: chardet labels a short UTF-8 file with a few multi-byte characters as Windows-1254, so each emoji decoded as several Latin characters. UTF-8 is now tried first, with chardet as the fallback for legacy encodings.<br/>
+<a href="https://github.com/TagStudioDev/TagStudio/pull/1566">TagStudio #1566</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="150" align="center">
+<img src="https://github.com/unslothai.png" width="34"/><br/>
+<b>unsloth</b><br/><sub>69k⭐</sub>
+</td>
+<td valign="top">
+Blocking <code>time.sleep</code> (up to 30s) freezing the async event loop in the model-export route — <b>found by codehound</b>.<br/>
+<a href="https://github.com/unslothai/unsloth/pull/6135">#6135</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/pydantic.png" width="34"/><br/>
+<b>pydantic-ai</b><br/><sub>18k⭐</sub>
+</td>
+<td valign="top">
+Shared mutable-default <code>deque</code> in <code>process_tool_calls</code> leaking one run's result into the next — <b>found by codehound</b>. Merged same day.<br/>
+<a href="https://github.com/pydantic/pydantic-ai/pull/6189">#6189</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/ogx-ai.png" width="34"/><br/>
+<b>OGX</b><br/><sub>Open GenAI Stack · 8k⭐</sub>
+</td>
+<td valign="top">
+The vector store's expired-batch cleanup ran as a bare <code>asyncio.create_task</code> that <code>shutdown()</code> never saw, so shutdown returned mid-cleanup and process exit cancelled it silently, leaving half-deleted batches until the next daily run. Tracked and awaited on shutdown, with tests that fail against a cancel-only fix.<br/>
+<a href="https://github.com/ogx-ai/ogx/pull/6226">ogx #6226</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
 <td valign="top" align="center">
 <img src="https://github.com/pytest-dev.png" width="34"/><br/>
 <b>pyfakefs</b><br/><sub>pytest-dev</sub>
@@ -113,12 +204,122 @@ The fake <code>os.rename</code> dropped a trailing separator before checking it,
 </tr>
 <tr>
 <td valign="top" align="center">
+<img src="https://github.com/prowler-cloud.png" width="34"/><br/>
+<b>prowler</b><br/><sub>14k⭐</sub>
+</td>
+<td valign="top">
+Azure Flexible Server check reading log-retention from the wrong config key, with a regression test. Merged by a maintainer.<br/>
+<a href="https://github.com/prowler-cloud/prowler/pull/11761">#11761</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/agno-agi.png" width="34"/><br/>
+<b>agno</b><br/><sub>41k⭐</sub>
+</td>
+<td valign="top">
+Blocking <code>time.sleep</code> / <code>requests.get</code> in async, plus a file-handle leak in <code>transcribe_audio</code>. Discord-handler bug <b>found by codehound</b>.<br/>
+<a href="https://github.com/agno-agi/agno/pull/8158">#8158</a> · <a href="https://github.com/agno-agi/agno/pull/8186">#8186</a> · <a href="https://github.com/agno-agi/agno/pull/8161">#8161</a> · <a href="https://github.com/agno-agi/agno/pull/8138">#8138</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/mem0ai.png" width="34"/><br/>
+<b>mem0</b><br/><sub>62k⭐</sub>
+</td>
+<td valign="top">
+Mutable default arguments (B006) in <code>Completions.create</code> and <code>BaseEmbedderConfig</code>, with a regression test.<br/>
+<a href="https://github.com/mem0ai/mem0/pull/5302">#5302</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/huggingface.png" width="34"/><br/>
+<b>HuggingFace</b><br/><sub>hub · accelerate · peft</sub>
+</td>
+<td valign="top">
+Documented undocumented public-API parameters. The hub change <b>shipped in release v1.17.0</b> — live on PyPI.<br/>
+<a href="https://github.com/huggingface/huggingface_hub/pull/4289">hub #4289</a> · <a href="https://github.com/huggingface/accelerate/pull/4051">accelerate #4051</a> · <a href="https://github.com/huggingface/peft/pull/3271">peft #3271</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/marimo-team.png" width="34"/><br/>
+<b>marimo</b><br/><sub>22k⭐ · YC</sub>
+</td>
+<td valign="top">
+Shipped a <b>new public-API feature</b> — a <code>filter</code> argument on <code>mo.ui.file_browser()</code>.<br/>
+<a href="https://github.com/marimo-team/marimo/pull/9667">#9667</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/weaviate.png" width="34"/><br/>
+<b>Weaviate · Xorbits</b><br/><sub>vector DB · inference</sub>
+</td>
+<td valign="top">
+Blocking <code>time.sleep</code> in async <code>wait_for_weaviate</code> — <b>found by codehound</b>, merged by a maintainer. Same bug class fixed at <b>Xorbits</b>.<br/>
+<a href="https://github.com/weaviate/weaviate-python-client/pull/2104">weaviate #2104</a> · <a href="https://github.com/xorbitsai/inference/pull/5055">xinference #5055</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/apache.png" width="34"/><br/>
+<b>Apache Maven</b><br/><sub>build tooling, Java</sub>
+</td>
+<td valign="top">
+Four merges, all reviewed by @elharo. A test in the source plugin that asserted on the wrong path so it could never fail. A deprecated Maven&nbsp;2 constant in the help plugin — the issue proposed replacing it with <code>null</code>, which would have emptied the metaversion and broken two-part coordinates, so the value stayed and the first tests for that method came with it. And a hash analyzer that computed and cached a jar's SHA-1 correctly but returned the stale <code>null</code> local instead of the new value, so every first-time lookup behaved as if the file couldn't be hashed. And the source plugin's <code>aggregate</code> goal, which silently did nothing on a non-POM project, now fails with a message naming the project and its packaging.<br/>
+<a href="https://github.com/apache/maven-source-plugin/pull/318">maven-source-plugin #318</a> · <a href="https://github.com/apache/maven-help-plugin/pull/424">maven-help-plugin #424</a> · <a href="https://github.com/apache/maven-shared-jar/pull/165">maven-shared-jar #165</a> · <a href="https://github.com/apache/maven-source-plugin/pull/320">maven-source-plugin #320</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/celery.png" width="34"/><br/>
+<b>Celery · kombu · billiard</b><br/><sub>messaging and worker pool</sub>
+</td>
+<td valign="top">
+Eight merges, all reviewed by @auvipy. In kombu, the SQS, Azure Storage Queues, ZooKeeper and Kafka transports kept per-connection state at class level, so connections to different accounts or vhosts shared queue caches and unacked messages; the filesystem transport hid a failed <code>open()</code> behind an <code>UnboundLocalError</code>. In billiard, Celery's process pool, a closed <code>Queue</code> lost items under <code>python -O</code>, closing a live <code>Process</code> left the child unreapable, and <code>maxtasksperchild=0</code> made the pool respawn workers forever. Each fix came with a regression test, and I was later asked to review another contributor's billiard PR.<br/>
+<a href="https://github.com/celery/kombu/pull/2676">kombu #2676</a> · <a href="https://github.com/celery/kombu/pull/2679">#2679</a> · <a href="https://github.com/celery/kombu/pull/2680">#2680</a> · <a href="https://github.com/celery/kombu/pull/2681">#2681</a> · <a href="https://github.com/celery/kombu/pull/2683">#2683</a> · <a href="https://github.com/celery/billiard/pull/465">billiard #465</a> · <a href="https://github.com/celery/billiard/pull/466">#466</a> · <a href="https://github.com/celery/billiard/pull/467">#467</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
 <img src="https://github.com/MagicStack.png" width="34"/><br/>
 <b>asyncpg</b><br/><sub>PostgreSQL driver · 8k⭐</sub>
 </td>
 <td valign="top">
 <code>Connection.query_logger()</code> removed its logger only when the block exited cleanly, so an exception inside it left the logger attached and logging every later query on that connection.<br/>
 <a href="https://github.com/MagicStack/asyncpg/pull/1373">asyncpg #1373</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/cunla.png" width="34"/><br/>
+<b>fakeredis</b><br/><sub>in-memory Redis for tests</sub>
+</td>
+<td valign="top">
+Found by running the same commands against a real Redis server and the fake one. <code>BITOP</code> cut its result to the shortest operand and crashed on a missing first key, and every search around a member (<code>GEOSEARCH ... FROMMEMBER</code>, <code>GEORADIUSBYMEMBER</code>) crashed with a Python <code>TypeError</code> instead of Redis's error.<br/>
+<a href="https://github.com/cunla/fakeredis-py/pull/593">fakeredis #593</a> · <a href="https://github.com/cunla/fakeredis-py/pull/594">#594</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/svinota.png" width="34"/><br/>
+<b>pyroute2</b><br/><sub>Linux netlink · 9P</sub>
+</td>
+<td valign="top">
+The 9P server kept its fid table and inode map at class level, so two servers in one process shared them: one client read another server's file through its own fid. Moved the state per session and per filesystem, with a test that runs two servers side by side.<br/>
+<a href="https://github.com/svinota/pyroute2/pull/1492">pyroute2 #1492</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/joblib.png" width="34"/><br/>
+<b>joblib · loky</b><br/><sub>process executor</sub>
+</td>
+<td valign="top">
+When <code>os.pipe()</code> failed in <code>Popen._launch</code>, for example when the parent ran out of file descriptors, the cleanup raised <code>UnboundLocalError</code> and hid the real <code>OSError</code>. Reproduced without mocks by lowering <code>RLIMIT_NOFILE</code>.<br/>
+<a href="https://github.com/joblib/loky/pull/668">loky #668</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
 <tr>
@@ -141,7 +342,76 @@ In <b>pymodbus</b>, every device identity shared one class-level dict, so creati
 <a href="https://github.com/pymodbus-dev/pymodbus/pull/3036">pymodbus #3036</a> · <a href="https://github.com/secdev/scapy/pull/5204">scapy #5204</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
 </td>
 </tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/redis.png" width="34"/><br/>
+<b>redis-py</b><br/><sub>14k⭐</sub>
+</td>
+<td valign="top">
+<code>utils.pipeline()</code> ran <code>execute()</code> after a bare <code>yield</code>, so an exception inside the <code>with</code> block skipped it. After a <code>watch()</code> that leaked a real pooled connection on every failure.<br/>
+<a href="https://github.com/redis/redis-py/pull/4345">redis-py #4345</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/mercari.png" width="34"/><br/>
+<b>Mercari</b><br/><sub>data pipeline, Java</sub>
+</td>
+<td valign="top">
+Two Avro timestamp bugs on the JDBC path — <code>timestamp-micros</code> truncated to milliseconds, and a millis-to-micros conversion that scaled the wrong way — both silently corrupting sub-second data.<br/>
+<a href="https://github.com/mercari/pipeline/pull/119">pipeline #119</a> · <a href="https://github.com/mercari/pipeline/pull/122">#122</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/grokability.png" width="34"/><br/>
+<b>Snipe-IT</b><br/><sub>PHP · asset mgmt</sub>
+</td>
+<td valign="top">
+<code>--force</code> did not suppress a PHP-version prompt in <code>ldap:troubleshoot</code>, so the command hung in Docker where no one could answer it — the guard present on two neighbouring confirmations was missing on the third.<br/>
+<a href="https://github.com/grokability/snipe-it/pull/19514">snipe-it #19514</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<img src="https://github.com/phasespace-labs.png" width="34"/><br/>
+<b>palinode</b><br/><sub>memory store</sub>
+</td>
+<td valign="top">
+Two memories whose opening lines matched derived the same filename, and the second silently overwrote the first — no error, and a receipt indistinguishable from a fresh save. Fixing the collision exposed a second bug the maintainer caught in review: a memory pushed onto a suffixed path climbed to a new suffix on every re-save, because the scan skipped occupied files without checking what was in them.<br/>
+<a href="https://github.com/phasespace-labs/palinode/pull/132">palinode #132</a> · <img src="https://img.shields.io/badge/merged-1a7f37?style=flat-square&logo=github&logoColor=white" alt="merged"/>
+</td>
+</tr>
 </table>
+
+<sub><b>53 PRs merged</b> · <b>32 organizations</b> · <b>400k+ combined stars</b> — all reviewed and merged by core maintainers.</sub>
+
+<p>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/View_all_53_merged_PRs-1a7f37?style=flat-square&logo=github&logoColor=white" alt="View all 53 merged PRs"/></a>
+  <a href="https://github.com/kratos0718/open-source-contributions"><img src="https://img.shields.io/badge/Full_contribution_list-8250df?style=flat-square&logo=github&logoColor=white" alt="Full contribution list"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Akratos0718+is%3Aopen&type=pullrequests"><img src="https://img.shields.io/badge/View_open_PRs-0969da?style=flat-square&logo=github&logoColor=white" alt="View open PRs"/></a>
+</p>
+
+**Currently under review:**
+
+<p>
+  <a href="https://github.com/run-llama/llama_index/pulls?q=is%3Apr+author%3Akratos0718+is%3Aopen"><img src="https://img.shields.io/badge/LlamaIndex-session_leak·shared_state-8250df?style=flat-square" alt="llama_index"/></a>
+  <a href="https://github.com/BerriAI/litellm/pull/41582"><img src="https://img.shields.io/badge/litellm-Router_memory_leak-1a7f37?style=flat-square" alt="litellm"/></a>
+  <a href="https://github.com/shap/shap/pull/5184"><img src="https://img.shields.io/badge/SHAP-style_context_restore-ff0d57?style=flat-square" alt="shap"/></a>
+  <a href="https://github.com/pyg-team/pytorch_geometric/pull/10832"><img src="https://img.shields.io/badge/PyG-per--instance_explainer_state-3C2179?style=flat-square&logo=pytorch&logoColor=white" alt="pytorch_geometric"/></a>
+  <a href="https://github.com/Lightning-AI/torchmetrics/pull/3520"><img src="https://img.shields.io/badge/torchmetrics-ranking_loss_ties-792EE5?style=flat-square&logo=lightning&logoColor=white" alt="torchmetrics"/></a>
+  <a href="https://github.com/meta-pytorch/torchtune/pull/2964"><img src="https://img.shields.io/badge/torchtune-rank--zero_logging-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="torchtune"/></a>
+  <a href="https://github.com/jax-ml/jax/pull/42553"><img src="https://img.shields.io/badge/JAX-zero--size_linalg-4285F4?style=flat-square&logo=google&logoColor=white" alt="JAX"/></a>
+  <a href="https://github.com/apache/maven-shared-jar/pull/166"><img src="https://img.shields.io/badge/Apache_Maven-approved-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Apache Maven"/></a>
+  <a href="https://github.com/paramiko/paramiko/pull/2694"><img src="https://img.shields.io/badge/paramiko-socket_leak-3572A5?style=flat-square&logo=python&logoColor=white" alt="paramiko"/></a>
+  <a href="https://github.com/arrow-py/arrow/pull/1361"><img src="https://img.shields.io/badge/arrow-ReDoS_in_timestamp_parsing-cf222e?style=flat-square" alt="arrow"/></a>
+  <a href="https://github.com/pygments/pygments/pull/3324"><img src="https://img.shields.io/badge/pygments-regex_backtracking-cf222e?style=flat-square" alt="pygments"/></a>
+  <a href="https://github.com/valkey-io/valkey-py/pull/340"><img src="https://img.shields.io/badge/valkey--py-pipeline_connection_leak-DC382D?style=flat-square" alt="valkey-py"/></a>
+  <a href="https://github.com/aio-libs/aiokafka/pull/1190"><img src="https://img.shields.io/badge/aiokafka-fetch_context_leak-3572A5?style=flat-square&logo=apachekafka&logoColor=white" alt="aiokafka"/></a>
+  <a href="https://github.com/microsoft/autogen/pull/7825"><img src="https://img.shields.io/badge/Microsoft_autogen-task_GC-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="autogen"/></a>
+  <a href="https://github.com/dask/dask/pull/12482"><img src="https://img.shields.io/badge/Dask-extension_dtype-FDA061?style=flat-square" alt="dask"/></a>
+  <a href="https://github.com/agentscope-ai/agentscope-java/pull/2543"><img src="https://img.shields.io/badge/AgentScope_Java-shared_SkillBox-b07219?style=flat-square&logo=openjdk&logoColor=white" alt="agentscope-java"/></a>
+</p>
 
 ---
 
